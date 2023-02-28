@@ -1,0 +1,297 @@
+.footer {
+  width: 100%;
+  background: #f9f9f9;
+}
+.footer > .container {
+  width: 89.583%;
+  margin: 0 auto;
+}
+.footer > .container > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 262px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+.footer > .container > .wrapper .company-base-info {
+  margin-top: 80px;
+}
+.footer > .container > .wrapper .company-base-info .logo {
+  width: 130px;
+  height: 60px;
+}
+.footer > .container > .wrapper .company-base-info .logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+.footer > .container > .wrapper .company-base-info .company-name {
+  font-size: 21px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+@media screen and (max-width: 1760px) {
+  .footer > .container > .wrapper .company-base-info {
+    margin-top: 65px;
+  }
+  .footer > .container > .wrapper .company-base-info .company-name {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .footer > .container > .wrapper .company-base-info {
+    margin-top: 60px;
+  }
+  .footer > .container > .wrapper .company-base-info .company-name {
+    width: 150px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer > .container > .wrapper .company-base-info {
+    margin-top: 0;
+  }
+  .footer > .container > .wrapper .company-base-info .company-name {
+    width: 130px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > .container > .wrapper .company-base-info {
+    position: absolute;
+    left: 65%;
+    top: 12%;
+  }
+  .footer > .container > .wrapper .company-base-info .company-name {
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer > .container > .wrapper .company-base-info .logo {
+    margin-bottom: 5px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer > .container > .wrapper .company-base-info {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  .footer > .container > .wrapper .company-base-info .logo {
+    height: 53px;
+  }
+}
+.footer > .container > .wrapper .nav-bar {
+  margin-top: 45px;
+}
+.footer > .container > .wrapper .nav-bar > ul {
+  display: flex;
+  width: 1098px;
+  justify-content: space-between;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li {
+  margin: 20px 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li.title a {
+  font-size: 21px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li.title {
+    width: 82px !important;
+    margin-right: 0 !important;
+  }
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li:last-child {
+  margin-bottom: 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li:first-child {
+  margin-top: 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li a {
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+@media screen and (max-width: 1150px) {
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li {
+    margin: 0;
+    position: relative;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li:not(:first-child):not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-35%);
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li a {
+    padding: 0 8px;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li:first-child {
+    width: 90px;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li.title {
+    margin-right: 10px;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li.title a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > .container > .wrapper .nav-bar > ul > li > ul > li a {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer > .container > .wrapper .nav-bar > ul > li > ul {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li > ul.last {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer > .container > .wrapper .nav-bar > ul > li:nth-child(5) {
+    margin-bottom: 25px;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li:nth-child(5) ul {
+    position: relative;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li:nth-child(5) ul li:last-child {
+    position: absolute;
+    left: 80px;
+    top: 28px;
+  }
+  .footer > .container > .wrapper .nav-bar > ul > li:nth-child(5) ul li:nth-child(4)::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .footer > .container > .wrapper .nav-bar > ul {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .footer > .container > .wrapper .nav-bar > ul {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer > .container > .wrapper .nav-bar > ul {
+    flex-direction: column;
+    width: 468px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > .container > .wrapper .nav-bar > ul {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer > .container > .wrapper .nav-bar {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > .container > .wrapper .nav-bar {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .footer > .container > .wrapper {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > .container > .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.footer > .container .company-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 111px;
+  align-items: center;
+  font-size: 18px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+}
+.footer > .container .company-detail-info .icon {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.footer > .container .company-detail-info span {
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .footer > .container .company-detail-info span {
+    vertical-align: -2px;
+  }
+}
+.footer > .container .company-detail-info > .wrapper:first-child {
+  margin-bottom: 15px;
+}
+.footer > .container .company-detail-info > .wrapper:first-child .company-phone span:first-of-type {
+  margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .footer > .container .company-detail-info > .wrapper:first-child .company-phone span:first-of-type {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer > .container .company-detail-info > .wrapper:first-child .company-phone span:first-of-type {
+    margin-right: 8px;
+  }
+}
+.footer > .container .company-detail-info > .wrapper:last-child {
+  display: flex;
+}
+.footer > .container .company-detail-info > .wrapper:last-child .company-email {
+  margin-right: 52px;
+}
+@media screen and (max-width: 867px) {
+  .footer > .container .company-detail-info > .wrapper:last-child .company-email {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 867px) {
+  .footer > .container .company-detail-info > .wrapper:last-child {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > .container .company-detail-info {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer > .container .company-detail-info company-phone span:first-of-type {
+    margin-right: 8px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer > .container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer > .container {
+    width: 97%;
+  }
+}

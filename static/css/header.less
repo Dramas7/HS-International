@@ -1,0 +1,431 @@
+.header {
+  background: linear-gradient(225deg, rgba(0, 0, 0, 0.8) 0%, #141414 100%);
+  height: 119px;
+  position: relative;
+  z-index: 5;
+
+  @keyframes underlineExtend {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .logo {
+      margin-left: 50px;
+      margin-top: 6px;
+
+      img {
+        width: 104px;
+
+        @media screen and (max-width: 992px) {
+          width: 95px;
+        }
+      }
+    }
+
+    .operate-column {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 50px;
+
+      .langue {
+        position: relative;
+        z-index: 5;
+        width: 119px;
+        height: 33px;
+        background: #222222;
+        box-shadow: inset 0px 0px 7px 0px rgba(16, 16, 16, 0.5);
+        border-radius: 5px;
+
+        .selector {
+          height: 100%;
+          box-sizing: border-box;
+          padding: 0 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+
+          .langue-name {
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #ffffff;
+          }
+
+          .button {
+            cursor: pointer;
+
+            .m-trangle() {
+              width: 0;
+              height: 0;
+              border: 5px solid transparent;
+            }
+
+            .trangle {
+              .m-trangle();
+              margin-top: 2px;
+              border-top: 5px solid #fff;
+            }
+
+            .triangle-reverse {
+              .m-trangle();
+              border-bottom: 5px solid #fff;
+              margin-bottom: 2px;
+            }
+          }
+
+          .langue-list {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 119px;
+            height: 160px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px 0 #33333317;
+            display: none;
+
+            li {
+              font-size: 14px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #333333;
+              padding: 10px;
+              text-align: center;
+              cursor: pointer;
+
+              &:hover {
+                color: #d12f39;
+              }
+
+              &.active {
+                color: #d12f39;
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .menu {
+        display: none;
+
+        .icon {
+          box-sizing: border-box;
+          width: 30px;
+          height: 30px;
+          background-color: #fff;
+          padding: 6px 0;
+          border-top: 6px solid #fff;
+          border-bottom: 6px solid #fff;
+          background-clip: content-box;
+          cursor: pointer;
+        }
+
+        .list {
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          position: absolute;
+          left: 0;
+          top: 119px;
+          width: 100%;
+          height: 500px;
+          background: linear-gradient(225deg, rgba(0, 0, 0, 0.8) 0%, #141414 100%);
+
+          .nav {
+            margin-top: -60px;
+            margin-right: 0;
+
+            ul {
+              height: 350px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+
+              li {
+                position: relative;
+
+                a {
+                  font-size: 15px;
+                  font-family: PingFangSC-Regular, PingFang SC;
+                  font-weight: 400;
+                  color: #999999;
+                  letter-spacing: 1px;
+                }
+
+                &.active {
+                  a {
+                    font-size: 15px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #ffffff;
+                    letter-spacing: 1px;
+                  }
+                }
+
+                &.active::after {
+                  content: '';
+                  position: absolute;
+                  background-color: #fff;
+                  height: 1px;
+                  width: 100%;
+                  left: 50%;
+                  bottom: -5px;
+                  transform: translateX(-50%);
+                }
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+      }
+
+      .nav {
+        margin-right: 25px;
+        transform: translateY(-6%);
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            position: relative;
+            margin: 0 25px;
+
+            a {
+              font-size: 15px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #999999;
+              letter-spacing: 1px;
+              transition: color .2s;
+
+              &:hover {
+                color: #fff;
+              }
+
+              &.active {
+                font-size: 15px;
+                font-weight: 600;
+                color: #ffffff;
+                letter-spacing: 1px;
+              }
+  
+              &.active::after {
+                content: '';
+                position: absolute;
+                background-color: #fff;
+                height: 1px;
+                width: 100%;
+                left: 50%;
+                bottom: -5px;
+                transform: translateX(-50%);
+                animation: underlineExtend .2s linear forwards;
+              }
+            }
+
+            &.unfold {
+              .unfold-list {
+                ul {
+                  li {
+                    a {
+                      &.active {
+                        all: initial;
+                        font-size: 15px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #d12f39;
+                        letter-spacing: 1px;
+                        transition: color 0.2s;
+                        pointer-events: none;
+
+                        &::after {
+                          content: '';
+                          display: block;
+                          width: 0;
+                          height: 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            
+              & > ul > li {
+
+                &:first-child {
+                  margin-left: 0;
+                  display: none;
+
+                  ul {
+                    li {
+                      margin: 0;
+                    }
+                  }
+                }
+
+                &:nth-child(2) {
+                  margin-left: 0;
+                }
+
+                &:last-child {
+                  margin-right: 0;
+                }
+              }
+
+              @media screen and (max-width: 1400px) {
+                & > ul > li {
+                  &:first-child {
+                    display: block;
+                    margin-right: 0;
+
+                    ul {
+                      position: relative;
+
+                      & > li {
+
+                        &.unfold-list {
+                          display: none;
+                          width: 150px;
+                          height: auto;
+                          position: absolute;
+                          left: 50%;
+                          top: 40px;
+                          transform: translateX(-50%);
+                          box-shadow: 0 5px 5px rgba(8, 8, 8, 0.041);
+                          
+                          ul {
+                            background-color: #fff;
+                            display: block;
+                            text-align: center;
+                            border-radius: 5px;
+
+                            li {
+                              padding: 8px 10px;
+
+                              a {
+                                &:hover {
+                                  color: #d12f39;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    margin-left: 25px;
+                  }
+
+                  &:not(:first-child) {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width: 992px) {
+          margin-right: 15px;
+
+          ul {
+            li {
+              margin: 0 15px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px){
+    height: 100px;
+
+    .container {
+      .logo {
+        margin-left: 40px;
+      }
+
+      .operate-column {
+        margin-right: 40px;
+
+        .menu {
+          .list {
+            top: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 485px){
+    height: 90px;
+
+    .container {
+      .logo {
+        margin-left: 30px;
+      }
+
+      .operate-column {
+        margin-right: 30px;
+
+        .menu {
+          .list {
+            top: 90px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    height: 85px;
+
+    .container {
+      .logo {
+        margin-left: 25px;
+      }
+
+      .operate-column {
+        margin-right: 25px;
+        .menu {
+          .list {
+            top: 85px;
+          }
+        }
+      }
+    }
+  }
+}

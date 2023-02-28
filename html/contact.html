@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="../static/css/contact.css">
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/header.js"></script>
+  <script src="../static/js/contact.js"></script>
+</head>
+
+<body>
+  <!-- 页面头部 -->
+  <header class="header container">
+    <div class="container">
+      <div class="logo">
+        <img src="../static/imgs/header/logo.png" alt="logo">
+      </div>
+      <div class="operate-column">
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="javascript:;" data-home>首页</a>
+            </li>
+            <li>
+              <a href="javascript:;" data-store>精选商品</a>
+            </li>
+            <li>
+              <a href="javascript:;" data-partner>伙伴/项目</a>
+            </li>
+            <li class="unfold">
+              <ul>
+                <li>
+                  <ul>
+                    <li class="other">
+                      <a href="javascript:;">其他</a>
+                    </li>
+                    <li class="unfold-list">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-news>新闻/博客</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-about>关于我们</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-contact>联系我们</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-database>资料下载</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-news>新闻/博客</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-about>关于我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-contact>联系我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-database>资料下载</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="langue">
+          <div class="selector">
+            <div class="langue-name">
+              中文
+            </div>
+            <div class="button">
+              <div class="triangle-reverse"></div>
+              <div class="trangle"></div>
+            </div>
+            <ul class="langue-list">
+              <li class="cn active">中文</li>
+              <li class="en">English</li>
+              <li class="rus">русский язык</li>
+              <li class="arab">بالعربية</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="icon"></div>
+          <div class="list" style="display: none;">
+            <div class="langue">
+              <div class="selector">
+                <div class="langue-name">
+                  中文
+                </div>
+                <div class="button">
+                  <div class="triangle-reverse"></div>
+                  <div class="trangle"></div>
+                </div>
+                <ul class="langue-list">
+                  <li class="cn active">中文</li>
+                  <li class="en">English</li>
+                  <li class="rus">русский язык</li>
+                  <li class="arab">بالعربية</li>
+                </ul>
+              </div>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li>
+                  <a href="javascript:;" data-home>首页</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-store>精选商品</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-partner>伙伴/项目</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-news>新闻/博客</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-about>关于我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-contact>联系我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-database>资料下载</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="contact">
+    <div class="banner">
+      <img src="../static/imgs/contact/banner.png" alt="banner">
+    </div>
+    <div class="main">
+      <div class="lead">
+        <div class="main-text">联系我们</div>
+        <div class="sub-text">contact us</div>
+      </div>
+      <div class="content">
+        <div class="message-board">
+          <div class="title">留言板</div>
+          <div class="comment">您有什么想对我们说的吗?</div>
+          <div class="form">
+            <ul>
+              <li class="name">
+                <label for="name">姓名</label>
+                <input type="text" id="name">
+              </li>
+              <li class="tel">
+                <label for="tel">电话</label>
+                <input type="text" id="tel">
+              </li>
+              <li class="mail">
+                <label for="mail">邮箱</label>
+                <input type="email" id="mail">
+              </li>
+              <li class="country">
+                <label for="country">国家</label>
+                <input type="text" id="country">
+              </li>
+              <li class="company">
+                <label for="company">公司</label>
+                <input type="text" id="company">
+              </li>
+              <li class="message">
+                <div class="count-tip">
+                  <span>0</span>/200
+                </div>
+                <label for="message">留言</label>
+                <textarea name="message" id="message" maxlength="200"></textarea>
+              </li>
+              <li class="btn">
+                <input type="submit">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="company-info">
+          <div class="title">联系我们</div>
+          <ul class="info-list">
+            <li class="company-name">
+              <div class="title">公司名称</div>
+              <div class="content">红粟新生态产业科学有限公司</div>
+            </li>
+            <li class="company-tel">
+              <div class="title">公司热线</div>
+              <div class="content">+432 533 12 523</div>
+            </li>
+            <li class="company-addr">
+              <div class="title">公司地址</div>
+              <div class="content">广东省东莞市松山湖园区御豪轩科技大厦1501</div>
+            </li>
+            <li class="company-eamil">
+              <div class="title">公司邮箱</div>
+              <div class="content">info2@domain.com</div>
+            </li>
+          </ul>
+          <ul class="icon-list">
+            <li class="tw">
+              <img src="../static/imgs/contact/tw.png" alt="tw">
+            </li>
+            <li class="facebook">
+              <img src="../static/imgs/contact/facebook.png" alt="facebook">
+            </li>
+            <li class="pin">
+              <img src="../static/imgs/contact/pin.png" alt="pin">
+            </li>
+            <li class="YT">
+              <img src="../static/imgs/contact/YT.png" alt="YT">
+            </li>
+            <li class="ins">
+              <img src="../static/imgs/contact/ins.png" alt="ins">
+            </li>
+            <li class="g+">
+              <img src="../static/imgs/contact/g+.png" alt="g+">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="map">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>自定义marker样式</title>
+        </head>
+        <script charset="utf-8"
+          src="https://map.qq.com/api/gljs?v=1.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77"></script>
+        <style type="text/css">
+          html,
+          body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+          }
+
+          #container {
+            width: 100%;
+            height: 100%;
+          }
+
+          #set-style {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 9999;
+            padding: 10px;
+          }
+        </style>
+
+        <body>
+          <div id="container"></div>
+          <script>
+            var center = new TMap.LatLng(22.957789,113.885945);//设置中心点坐标
+            //初始化地图
+            var map = new TMap.Map("container", {
+              center: center
+            });
+
+            //初始化marker
+            var marker = new TMap.MultiMarker({
+              id: 'marker-layer',
+              map: map,
+              styles: {
+                "marker": new TMap.MarkerStyle({
+                  "width": 70,
+                  "height": 70,
+                  "src": 'https://mapapi.qq.com/web/lbs/javascriptGL/demo/img/markerNew.png',
+                  "opacity": 0.5
+                })
+              },
+              geometries: [{
+                "id": 'demo',
+                "styleId": 'marker',
+                "position": new TMap.LatLng(22.957789,113.885945),
+                "properties": {
+                  "title": "marker"
+                }
+              }]
+            });
+          </script>
+        </body>
+
+        </html>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="wrapper">
+        <div class="company-base-info">
+          <div class="logo">
+            <img src="../static/imgs/footer/logo-footer.png" alt="logo">
+          </div>
+          <div class="company-name">红粟新生态产业科学发展（广东）有限公司</div>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <ul>
+                <li class="title"><a href="home.html">首页</a></li>
+                <li><a href="cash.html">CASH</a></li>
+                <li><a href="barter.html">BARTER</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="title"><a href="store.html">精选商品</a></li>
+                <li><a href="store.html">热门推荐</a></li>
+                <li><a href="store.html">商品列表</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="title"><a href="partner.html">伙伴/项目</a></li>
+            </li>
+            <li><a href="partner.html">伙伴/项目</a></li>
+          </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="title"><a href="news.html">新闻/博客</a></li>
+              <li><a href="news.html">公司资讯</a></li>
+              <li><a href="news.html">行业动态</a></li>
+              <li><a href="news.html">博客转区</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="title"><a href="about.html">关于我们</a></li>
+              <li><a href="about.html">公司简介</a></li>
+              <li><a href="about.html">核心价值观</a></li>
+              <li><a href="about.html">我们的目标</a></li>
+              <li><a href="about.html">我们的愿景</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="title"><a href="contact.html">联系我们</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+              <li><a href="contact.html">留言板</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="last">
+              <li class="title"><a href="database.html">资料下载</a></li>
+              <li><a href="database.html">资料下载</a></li>
+            </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="company-detail-info">
+        <div class="wrapper">
+          <div class="company-phone">
+            <i class="icon">
+              <img src="../static/imgs/footer/电话.png" alt="phone">
+            </i>
+            <span>公司热线：4001182279</span>
+            <span>公司热线：15820999902</span>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="company-email">
+            <i class="icon">
+              <img src="../static/imgs/footer/邮箱.png" alt="email">
+            </i>
+            <span>公司邮箱：bnbl01@gdmuren.com</span>
+          </div>
+          <div class="company-address">
+            <i class="icon">
+              <img src="../static/imgs/footer/地址.png" alt="addr">
+            </i>
+            <span>公司地址：广东省东莞市松山湖园区科技四路</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

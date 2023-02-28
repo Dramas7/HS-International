@@ -1,0 +1,93 @@
+.footer {
+  width: 100%;
+  background: #f9f9f9;
+}
+.footer > .container {
+  width: 89.583%;
+  margin: 0 auto;
+}
+.footer > .container > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 262px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+}
+.footer > .container > .wrapper .company-base-info {
+  margin-top: 80px;
+}
+.footer > .container > .wrapper .company-base-info .logo {
+  width: 130px;
+  height: 60px;
+}
+.footer > .container > .wrapper .company-base-info .logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+.footer > .container > .wrapper .company-base-info .company-name {
+  font-size: 21px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+.footer > .container > .wrapper .nav-bar {
+  margin-top: 45px;
+}
+.footer > .container > .wrapper .nav-bar > ul {
+  display: flex;
+  width: 1098px;
+  justify-content: space-between;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li {
+  margin: 20px 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li.title a {
+  font-size: 21px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li:last-child {
+  margin-bottom: 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li:first-child {
+  margin-top: 0;
+}
+.footer > .container > .wrapper .nav-bar > ul > li > ul > li a {
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+.footer > .container .company-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 111px;
+  align-items: center;
+  font-size: 18px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+}
+.footer > .container .company-detail-info .icon {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.footer > .container .company-detail-info span {
+  vertical-align: middle;
+}
+.footer > .container .company-detail-info > .wrapper:first-child {
+  margin-bottom: 15px;
+}
+.footer > .container .company-detail-info > .wrapper:first-child .company-phone span:first-of-type {
+  margin-right: 50px;
+}
+.footer > .container .company-detail-info > .wrapper:last-child {
+  display: flex;
+}
+.footer > .container .company-detail-info > .wrapper:last-child .company-email {
+  margin-right: 52px;
+}

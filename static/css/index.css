@@ -1,0 +1,10 @@
+/* 重置样式和布局样式和通用样式 */
+@import 'reset.css';
+@import 'layout.css';
+@import 'global.css';
+
+/* header样式 */
+@import 'header.css';
+
+/* footer样式 */
+@import 'footer.css';

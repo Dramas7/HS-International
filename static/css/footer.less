@@ -1,0 +1,327 @@
+.footer {
+  width: 100%;
+  background: #f9f9f9;
+
+  & > .container {
+    width: 89.583%;
+    margin: 0 auto;
+
+    & > .wrapper {
+      display: flex;
+      justify-content: space-between;
+      height: 262px;
+      border-bottom: 1px solid #dddddd;
+      position: relative;
+
+      .company-base-info {
+        margin-top: 80px;
+
+        .logo {
+          width: 130px;
+          height: 60px;
+          
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+
+        .company-name {
+          font-size: 21px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333333;
+        }
+
+        @media screen and (max-width: 1760px) {
+          margin-top: 65px;
+
+          .company-name {
+            width: 250px;
+          }
+        }
+
+        @media screen and (max-width: 1250px) {
+          margin-top: 60px;
+          .company-name {
+            width: 150px;
+            font-size: 18px;
+          }
+        }
+
+        @media screen and (max-width: 1150px) {
+          margin-top: 0;
+
+          .company-name {
+            width: 130px;
+            font-size: 16px;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          position: absolute;
+          left: 65%;
+          top: 12%;
+
+          .company-name {
+            text-align: center;
+            font-size: 12px;
+          }
+
+          .logo {
+            margin-bottom: 5px;
+            height: 48px;
+          }
+        }
+
+        @media screen and (max-width: 500px) {
+          position: static;
+          margin-top: 20px;
+          margin-bottom: -10px;
+          
+          .logo {
+            height: 53px;
+          }
+        }
+      }
+
+      .nav-bar {
+        margin-top: 45px;
+
+        & > ul {
+          display: flex;
+          width: 1098px;
+          justify-content: space-between;
+
+          & > li {
+            & > ul {
+              & > li {
+                margin: 20px 0;
+
+                &.title {
+                  a {
+                    font-size: 21px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: #666666;
+                    margin-top: 0;
+                  }
+
+                  @media screen and (max-width: 768px) {
+                    width: 82px !important;
+                    margin-right: 0 !important;
+                  }
+                }
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                &:first-child {
+                  margin-top: 0;
+                }
+
+                a {
+                  font-size: 16px;
+                  font-family: PingFangSC-Regular, PingFang SC;
+                  font-weight: 400;
+                  color: #999999;
+                }
+
+                @media screen and (max-width: 1150px) {
+                  margin: 0;
+                  position: relative;
+
+                  &:not(:first-child):not(:last-child)::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-35%);
+                    width: 1px;
+                    height: 10px;
+                    background-color: #333333;
+                  }
+
+                  a {
+                    padding: 0 8px;
+                  }
+
+                  &:first-child {
+                    width: 90px;
+                  }
+
+                  &.title {
+                    a {
+                      font-size: 16px;
+                    }
+
+                    margin-right: 10px;
+                  }
+                }
+
+                @media screen and (max-width: 768px) {
+                  a {
+                    font-size: 14px !important;
+                  }
+                }
+              }
+
+              @media screen and (max-width: 1150px) {
+                display: flex;
+                margin-bottom: 10px;
+                align-items: center;
+                // justify-content: space-between;
+
+                &.last {
+                  margin-bottom: 0;
+                }
+              }
+            }
+
+            @media screen and (max-width: 500px) {
+              &:nth-child(5) {
+                margin-bottom: 25px;
+                ul {
+                  position: relative;
+                  li {
+                    &:last-child {
+                      position: absolute;
+                      left: 80px;
+                      top: 28px;
+                    }
+
+                    &:nth-child(4)::after {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          @media screen and (max-width: 1600px) {
+            width: 900px;
+          }
+
+          @media screen and (max-width: 1380px) {
+            width: 800px;
+          }
+
+          @media screen and (max-width: 1150px) {
+            flex-direction: column;
+            width: 468px;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: fit-content;
+          }
+        }
+
+        @media screen and (max-width: 1150px) {
+          margin-top: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+      }
+
+      @media screen and (max-width: 1150px) {
+        align-items: center;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+      }
+    }
+
+    .company-detail-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 111px;
+      align-items: center;
+      font-size: 18px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+
+      .icon {
+        display: inline-block;
+        margin-right: 3px;
+        vertical-align: middle;
+      }
+
+      span {
+        vertical-align: middle;
+
+        @media screen and (max-width: 768px) {
+          vertical-align: -2px;
+        }
+      }
+
+      & > .wrapper:first-child {
+        margin-bottom: 15px;
+
+        .company-phone {
+          span {
+            &:first-of-type {
+              margin-right: 50px;
+
+              @media screen and (max-width: 768px) {
+                margin-right: 15px;
+              }
+
+              @media screen and (max-width: 375px) {
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      & > .wrapper:last-child {
+        display: flex;
+
+        .company-email {
+          margin-right: 52px;
+
+          @media screen and (max-width: 867px) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 867px) {
+        & > .wrapper:last-child {
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+      }
+
+      @media screen and (max-width: 375px) {
+        company-phone {
+          span {
+            &:first-of-type {
+              margin-right: 8px !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 95%;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 97%;
+    }
+  }
+}

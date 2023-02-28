@@ -1,0 +1,140 @@
+/*** 常用样式 ***/
+
+
+/*** 响应式布局工具函数 ***/
+.set-gap(@n) {
+  gap: @base-gap - @n * @gap-diff-unit;
+}
+
+.set-margin-bot(@n) {
+  margin-bottom: @base-margin - @n * @margin-diff-unit;
+}
+
+.set-font(@n, @base-font) {
+  font-size: @base-font - @n * @font-diff-unit;
+}
+
+/*** 小组件 ***/
+
+// 页面带横线的标题
+.headline(@base-width: 80%, @base-margin-bot: 80px) {
+  .title {
+    @diff-unit-font: 2px;
+    @base-font: 36px;
+    .set-font(@n) {
+      .text {
+        font-size: @base-font - @diff-unit-font * @n;
+      }
+    }
+
+    position: relative;
+    text-align: center;
+    margin-bottom: @base-margin-bot;
+
+    .text {
+      position: relative;
+      z-index: 2;
+      padding: 0 35px;
+      font-size: @base-font;
+      font-weight: 400;
+      color: #333333;
+      background-color: #fff;
+    }
+
+    .line {
+      position: absolute;
+      z-index: 1;
+      width: @base-width;
+      height: 2px;
+      background-color: #eeeeee;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    @media screen and (max-width: 1400px) {
+      .set-font(1);
+    }
+
+    @media screen and (max-width: 1200px) {
+      .set-font(2);
+    }
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 50px;
+      .set-font(3)
+    }
+  }
+}
+
+// 页面首行导语
+.uni-lead(@default-margin-left: 93px, @default-margin-bottom: 138px) {
+  .lead {
+    @diff-unit-font: 2px;
+    @diff-unit-margin: 10px;
+    @base-margin-top: 100px;
+    @base-margin-bottom: 138px;
+    @base-main-text-font-size: 48px;
+    @base-sub-text-font-size: 14px;
+
+    .set-margin(@n) {
+      margin-top: @base-margin-top - @diff-unit-margin * @n;
+      margin-bottom: @base-margin-bottom - @diff-unit-margin * @n;
+    }
+
+    .set-font(@n, @m) {
+      .main-text {
+        font-size: @base-main-text-font-size - @diff-unit-font * @n;
+      }
+
+      .sub-text {
+        font-size: @base-sub-text-font-size - @diff-unit-font * @m;
+      }
+    }
+
+    margin-top: @base-margin-top;
+    margin-bottom: @default-margin-bottom;
+    margin-left: @default-margin-left;
+
+    .main-text {
+      font-size: @base-main-text-font-size;
+      font-weight: 400;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+
+    .sub-text {
+      font-size: @base-sub-text-font-size;
+      font-weight: 400;
+      color: #666666;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .set-margin(1);
+      .set-font(2, 0);
+    }
+
+    @media screen and (max-width: 992px) {
+      .set-margin(5);
+      .set-font(3, 0);
+    }
+
+    @media screen and (max-width: 768px) {
+      .set-margin(8);
+      .set-font(4, 1);
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      .set-margin(10);
+      .set-font(5, 2);
+      margin-top: 20px;
+    }
+  }
+}
+
+
+
+

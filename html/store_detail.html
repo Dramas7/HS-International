@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <link rel="stylesheet" href="../static/css/global.css">
+  <link rel="stylesheet" href="../static/css/layout.css">
+  <link rel="stylesheet" href="../static/css/footer_static.css">
+  <link rel="stylesheet" href="../static/css/header_static.css">
+  <link rel="stylesheet" href="../static/css/store_detail.css">
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/header.js"></script>
+  <script src="../static/js/store_detail.js"></script>
+</head>
+
+<body style="width: 1920px;">
+    <!-- 遮罩层 -->
+    <div class="overlay" style="display: none;"></div>
+
+    <!-- 大图展示区 -->
+    <div class="large-pic-area" style="display: none;">
+      <img src="../static/imgs/store/big.png" alt="img">
+      <div class="close-btn">
+        <span>×</span>
+      </div>
+    </div>
+  <!-- 页面头部 -->
+  <header class="header container">
+    <div class="container">
+      <div class="logo">
+        <img src="../static/imgs/header/logo.png" alt="logo">
+      </div>
+      <div class="operate-column">
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="javascript:;" data-home>首页</a>
+            </li>
+            <li>
+              <a href="javascript:;" data-store>精选商品</a>
+            </li>
+            <li>
+              <a href="javascript:;" data-partner>伙伴/项目</a>
+            </li>
+            <li class="unfold">
+              <ul>
+                <li>
+                  <ul>
+                    <li class="other">
+                      <a href="javascript:;">其他</a>
+                    </li>
+                    <li class="unfold-list">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-news>新闻/博客</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-about>关于我们</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-contact>联系我们</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-database>资料下载</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-news>新闻/博客</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-about>关于我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-contact>联系我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-database>资料下载</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="langue">
+          <div class="selector">
+            <div class="langue-name">
+              中文
+            </div>
+            <div class="button">
+              <div class="triangle-reverse"></div>
+              <div class="trangle"></div>
+            </div>
+            <ul class="langue-list">
+              <li class="cn active">中文</li>
+              <li class="en">English</li>
+              <li class="rus">русский язык</li>
+              <li class="arab">بالعربية</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="icon"></div>
+          <div class="list" style="display: none;">
+            <div class="langue">
+              <div class="selector">
+                <div class="langue-name">
+                  中文
+                </div>
+                <div class="button">
+                  <div class="triangle-reverse"></div>
+                  <div class="trangle"></div>
+                </div>
+                <ul class="langue-list">
+                  <li class="cn active">中文</li>
+                  <li class="en">English</li>
+                  <li class="rus">русский язык</li>
+                  <li class="arab">بالعربية</li>
+                </ul>
+              </div>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li>
+                  <a href="javascript:;" data-home>首页</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-store>精选商品</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-partner>伙伴/项目</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-news>新闻/博客</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-about>关于我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-contact>联系我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-database>资料下载</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="store-detail">
+    <div class="base-info">
+      <div class="preview-column">
+        <div class="big-pic-area">
+          <img src="../static/imgs/store/big.png" alt="img" class="big-pic">
+          <div class="operate-column">
+            <div class="left-column">
+              <img src="../static/imgs/store/图片.png">
+              <img src="../static/imgs/store/放大镜.png">
+            </div>
+            <div class="right-column">
+              <img src="../static/imgs/store/上一个.png">
+              <img src="../static/imgs/store/下一个.png">
+            </div>
+          </div>
+        </div>
+        <div class="small-pic-area">
+          <ul class="pic-list">
+            <li class="is-selected">
+              <img src="../static/imgs/store/big.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/女装banner.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/big.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/女装banner.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/big.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/女装banner.png" alt="img">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-column">
+        <div class="product-info">
+          <div class="title">
+            现代简约LED餐厅吊灯客厅灯餐桌吊灯创意饭厅吊灯极简卧室书房灯
+          </div>
+          <div class="product-intr">
+            我是产品的一些小介绍我是产品的一些小介绍我是产品的一些小介绍我是产品的一些小介绍我是产品的一些小介绍我是产品的一些小介绍
+          </div>
+          <div class="content">
+            <div class="container">
+              <div class="sale"><span class="circle"></span><span class="text">月销：888件</span></div>
+              <div class="repertory"><span class="circle"></span><span class="text">库存：99999件</span></div>
+            </div>
+            <div class="addr"><span class="circle"></span><span class="text">发货：广东省东莞市松山湖科技十路御豪轩科技大厦</span></div>
+          </div>
+        </div>
+        <div class="product-attr">
+          <div class="price"><span>￥</span><span>550.00</span></div>
+          <div class="color">颜色 : 暖光白</div>
+          <ul class="pic-list">
+            <li class="is-selected">
+              <img src="../static/imgs/store/big.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/女装banner.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/big.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/女装banner.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/big.png" alt="img">
+            </li>
+            <li>
+              <img src="../static/imgs/store/女装banner.png" alt="img">
+            </li>
+          </ul>
+          <div class="size">
+            <div class="display">
+              <span>Size:</span><span class="specific">S</span>
+            </div>
+            <ul class="size-list">
+              <li class="active">M</li>
+              <li>L</li>
+              <li>S</li>
+              <li>XL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="like">
+          <img src="../static/imgs/store/Button／Medium.png">
+          <img src="../static/imgs/store/收藏.png">
+        </div>
+        <div class="contact">
+          <div class="name">联系人：<span class="specific-name">李先生</span></div>
+          <div class="tel">联系方式：<span class="specific-tel">185**********222</span></div>
+          <div class="intr">做一些联系人的简单小介绍做一些联系人的简单小介绍做一些联系人的简单小介绍做一些联系人的简单小介绍做一些</div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-info">
+      <div class="title">
+        <div class="text">产品详情</div>
+        <div class="btn"></div>
+      </div>
+      <div class="content"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="wrapper">
+        <div class="company-base-info">
+          <div class="logo">
+            <img src="../static/imgs/footer/logo-footer.png" alt="logo">
+          </div>
+          <div class="company-name">红粟新生态产业科学发展（广东）有限公司</div>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li>
+              <ul>
+                <li class="title"><a href="home.html">首页</a></li>
+                <li><a href="cash.html">CASH</a></li>
+                <li><a href="barter.html">BARTER</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="title"><a href="store.html">精选商品</a></li>
+                <li><a href="store.html">热门推荐</a></li>
+                <li><a href="store.html">商品列表</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="title"><a href="partner.html">伙伴/项目</a></li>
+            </li>
+            <li><a href="partner.html">伙伴/项目</a></li>
+          </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="title"><a href="news.html">新闻/博客</a></li>
+              <li><a href="news.html">公司资讯</a></li>
+              <li><a href="news.html">行业动态</a></li>
+              <li><a href="news.html">博客转区</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="title"><a href="about.html">关于我们</a></li>
+              <li><a href="about.html">公司简介</a></li>
+              <li><a href="about.html">核心价值观</a></li>
+              <li><a href="about.html">我们的目标</a></li>
+              <li><a href="about.html">我们的愿景</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li class="title"><a href="contact.html">联系我们</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+              <li><a href="contact.html">留言板</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="last">
+              <li class="title"><a href="database.html">资料下载</a></li>
+              <li><a href="database.html">资料下载</a></li>
+            </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="company-detail-info">
+        <div class="wrapper">
+          <div class="company-phone">
+            <i class="icon">
+              <img src="../static/imgs/footer/电话.png" alt="phone">
+            </i>
+            <span>公司热线：4001182279</span>
+            <span>公司热线：15820999902</span>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="company-email">
+            <i class="icon">
+              <img src="../static/imgs/footer/邮箱.png" alt="email">
+            </i>
+            <span>公司邮箱：bnbl01@gdmuren.com</span>
+          </div>
+          <div class="company-address">
+            <i class="icon">
+              <img src="../static/imgs/footer/地址.png" alt="addr">
+            </i>
+            <span>公司地址：广东省东莞市松山湖园区科技四路</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,873 @@
+
+.grid-12-col {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 5px;
+}
+
+.grid-36-col {
+  display: grid;
+  grid-template-columns: repeat(36, [col-start] 1fr);
+  gap: 5px;
+}
+
+.grid-12-col.grid-12-row {
+  grid-template-rows: repeat(12, [row-start] 1fr);
+}
+
+.grid-36-col.grid-36-row {
+  grid-template-rows: repeat(36, [row-start] 1fr);
+}
+
+.grid-12-col>div {
+  grid-column-end: span 12;
+}
+
+.grid-36-col>div {
+  grid-column-end: span 36;
+}
+
+div.col-36{grid-area: auto / auto / auto / span 36;}
+div.col-35{grid-area: auto / auto / auto / span 35;}
+div.col-34{grid-area: auto / auto / auto / span 34;}
+div.col-33{grid-area: auto / auto / auto / span 33;}
+div.col-32{grid-area: auto / auto / auto / span 32;}
+div.col-31{grid-area: auto / auto / auto / span 31;}
+div.col-30{grid-area: auto / auto / auto / span 30;}
+div.col-29{grid-area: auto / auto / auto / span 29;}
+div.col-28{grid-area: auto / auto / auto / span 28;}
+div.col-27{grid-area: auto / auto / auto / span 27;}
+div.col-26{grid-area: auto / auto / auto / span 26;}
+div.col-25{grid-area: auto / auto / auto / span 25;}
+div.col-24{grid-area: auto / auto / auto / span 24;}
+div.col-23{grid-area: auto / auto / auto / span 23;}
+div.col-22{grid-area: auto / auto / auto / span 22;}
+div.col-21{grid-area: auto / auto / auto / span 21;}
+div.col-20{grid-area: auto / auto / auto / span 20;}
+div.col-19{grid-area: auto / auto / auto / span 19;}
+div.col-18{grid-area: auto / auto / auto / span 18;}
+div.col-17{grid-area: auto / auto / auto / span 17;}
+div.col-16{grid-area: auto / auto / auto / span 16;}
+div.col-15{grid-area: auto / auto / auto / span 15;}
+div.col-14{grid-area: auto / auto / auto / span 14;}
+div.col-13{grid-area: auto / auto / auto / span 13;}
+div.col-12{grid-area: auto / auto / auto / span 12;}
+div.col-11{grid-area: auto / auto / auto / span 11;}
+div.col-10{grid-area: auto / auto / auto / span 10;}
+div.col-9{grid-area: auto / auto / auto /span 9;}
+div.col-8{grid-area: auto / auto / auto /span 8;}
+div.col-7{grid-area: auto / auto / auto /span 7;}
+div.col-6{grid-area: auto / auto / auto /span 6;}
+div.col-5{grid-area: auto / auto / auto /span 5;}
+div.col-4{grid-area: auto / auto / auto /span 4;}
+div.col-3{grid-area: auto / auto / auto /span 3;}
+div.col-2{grid-area: auto / auto / auto /span 2;}
+div.col-1{grid-area: auto / auto / auto /span 1;}
+
+div.row-36{grid-column-end: span 36;}
+div.row-35{grid-column-end: span 35;}
+div.row-34{grid-column-end: span 34;}
+div.row-33{grid-column-end: span 33;}
+div.row-32{grid-column-end: span 32;}
+div.row-31{grid-column-end: span 31;}
+div.row-30{grid-column-end: span 30;}
+div.row-29{grid-column-end: span 29;}
+div.row-28{grid-column-end: span 28;}
+div.row-27{grid-column-end: span 27;}
+div.row-26{grid-column-end: span 26;}
+div.row-25{grid-column-end: span 25;}
+div.row-24{grid-column-end: span 24;}
+div.row-23{grid-column-end: span 23;}
+div.row-22{grid-column-end: span 22;}
+div.row-21{grid-column-end: span 21;}
+div.row-20{grid-column-end: span 20;}
+div.row-19{grid-column-end: span 19;}
+div.row-18{grid-column-end: span 18;}
+div.row-17{grid-column-end: span 17;}
+div.row-16{grid-column-end: span 16;}
+div.row-15{grid-column-end: span 15;}
+div.row-14{grid-column-end: span 14;}
+div.row-13{grid-column-end: span 13;}
+div.row-12{grid-column-end: span 12;}
+div.row-11{grid-column-end: span 11;}
+div.row-10{grid-column-end: span 10;}
+div.row-9{grid-column-end: span 9;}
+div.row-8{grid-column-end: span 8;}
+div.row-7{grid-column-end: span 7;}
+div.row-6{grid-column-end: span 6;}
+div.row-5{grid-column-end: span 5;}
+div.row-4{grid-column-end: span 4;}
+div.row-3{grid-column-end: span 3;}
+div.row-2{grid-column-end: span 2;}
+div.row-1{grid-column-end: span 1;}
+
+@media screen and (min-width: 576px) {
+  /* 定义576~768px（小屏幕设备）列 */
+  div.col-sm-36{grid-area: auto / auto / auto / span 36;}
+  div.col-sm-35{grid-area: auto / auto / auto / span 35;}
+  div.col-sm-34{grid-area: auto / auto / auto / span 34;}
+  div.col-sm-33{grid-area: auto / auto / auto / span 33;}
+  div.col-sm-32{grid-area: auto / auto / auto / span 32;}
+  div.col-sm-31{grid-area: auto / auto / auto / span 31;}
+  div.col-sm-30{grid-area: auto / auto / auto / span 30;}
+  div.col-sm-29{grid-area: auto / auto / auto / span 29;}
+  div.col-sm-28{grid-area: auto / auto / auto / span 28;}
+  div.col-sm-27{grid-area: auto / auto / auto / span 27;}
+  div.col-sm-26{grid-area: auto / auto / auto / span 26;}
+  div.col-sm-25{grid-area: auto / auto / auto / span 25;}
+  div.col-sm-24{grid-area: auto / auto / auto / span 24;}
+  div.col-sm-23{grid-area: auto / auto / auto / span 23;}
+  div.col-sm-22{grid-area: auto / auto / auto / span 22;}
+  div.col-sm-21{grid-area: auto / auto / auto / span 21;}
+  div.col-sm-20{grid-area: auto / auto / auto / span 20;}
+  div.col-sm-19{grid-area: auto / auto / auto / span 19;}
+  div.col-sm-18{grid-area: auto / auto / auto / span 18;}
+  div.col-sm-17{grid-area: auto / auto / auto / span 17;}
+  div.col-sm-16{grid-area: auto / auto / auto / span 16;}
+  div.col-sm-15{grid-area: auto / auto / auto / span 15;}
+  div.col-sm-14{grid-area: auto / auto / auto / span 14;}
+  div.col-sm-13{grid-area: auto / auto / auto / span 13;}
+  div.col-sm-12{grid-area: auto / auto / auto / span 12;}
+  div.col-sm-11{grid-area: auto / auto / auto / span 11;}
+  div.col-sm-10{grid-area: auto / auto / auto / span 10;}
+  div.col-sm-8{grid-area: auto / auto / auto /span 8;}
+  div.col-sm-9{grid-area: auto / auto / auto / span 9;}
+  div.col-sm-7{grid-area: auto / auto / auto / span 7;}
+  div.col-sm-6{grid-area: auto / auto / auto / span 6;}
+  div.col-sm-5{grid-area: auto / auto / auto / span 5;}
+  div.col-sm-4{grid-area: auto / auto / auto / span 4;}
+  div.col-sm-3{grid-area: auto / auto / auto / span 3;}
+  div.col-sm-2{grid-area: auto / auto / auto / span 2;}
+  div.col-sm-1{grid-area: auto / auto / auto / span 1;}
+
+  /* 定义576~768px（小屏幕设备）行 */
+  div.row-sm-36{grid-column-end: span 36;}
+  div.row-sm-35{grid-column-end: span 35;}
+  div.row-sm-34{grid-column-end: span 34;}
+  div.row-sm-33{grid-column-end: span 33;}
+  div.row-sm-32{grid-column-end: span 32;}
+  div.row-sm-31{grid-column-end: span 31;}
+  div.row-sm-30{grid-column-end: span 30;}
+  div.row-sm-29{grid-column-end: span 29;}
+  div.row-sm-28{grid-column-end: span 28;}
+  div.row-sm-27{grid-column-end: span 27;}
+  div.row-sm-26{grid-column-end: span 26;}
+  div.row-sm-25{grid-column-end: span 25;}
+  div.row-sm-24{grid-column-end: span 24;}
+  div.row-sm-23{grid-column-end: span 23;}
+  div.row-sm-22{grid-column-end: span 22;}
+  div.row-sm-21{grid-column-end: span 21;}
+  div.row-sm-20{grid-column-end: span 20;}
+  div.row-sm-19{grid-column-end: span 19;}
+  div.row-sm-18{grid-column-end: span 18;}
+  div.row-sm-17{grid-column-end: span 17;}
+  div.row-sm-16{grid-column-end: span 16;}
+  div.row-sm-15{grid-column-end: span 15;}
+  div.row-sm-14{grid-column-end: span 14;}
+  div.row-sm-13{grid-column-end: span 13;}
+  div.row-sm-12{grid-column-end: span 12;}
+  div.row-sm-11{grid-column-end: span 11;}
+  div.row-sm-10{grid-column-end: span 10;}
+  div.row-sm-9{grid-column-end: span 9;}
+  div.row-sm-8{grid-column-end: span 8;}
+  div.row-sm-7{grid-column-end: span 7;}
+  div.row-sm-6{grid-column-end: span 6;}
+  div.row-sm-5{grid-column-end: span 5;}
+  div.row-sm-4{grid-column-end: span 4;}
+  div.row-sm-3{grid-column-end: span 3;}
+  div.row-sm-2{grid-column-end: span 2;}
+  div.row-sm-1{grid-column-end: span 1;}
+
+  /* 定义水平右偏移 */
+  div.col-sm-right-1{grid-column: auto / span 1;}
+  div.col-sm-right-2{grid-column: auto / span 2;}
+  div.col-sm-right-3{grid-column: auto / span 3;}
+  div.col-sm-right-4{grid-column: auto / span 4;}
+  div.col-sm-right-5{grid-column: auto / span 5;}
+  div.col-sm-right-6{grid-column: auto / span 6;}
+  div.col-sm-right-7{grid-column: auto / span 7;}
+  div.col-sm-right-8{grid-column: auto / span 8;}
+  div.col-sm-right-9{grid-column: auto / span 9;}
+  div.col-sm-right-10{grid-column: auto / span 10;}
+  div.col-sm-right-11{grid-column: auto / span 11;}
+  div.col-sm-right-12{grid-column: auto / span 12;}
+  div.col-sm-right-13{grid-column: auto / span 13;}
+  div.col-sm-right-14{grid-column: auto / span 14;}
+  div.col-sm-right-15{grid-column: auto / span 15;}
+  div.col-sm-right-16{grid-column: auto / span 16;}
+  div.col-sm-right-17{grid-column: auto / span 17;}
+  div.col-sm-right-18{grid-column: auto / span 18;}
+  div.col-sm-right-19{grid-column: auto / span 19;}
+  div.col-sm-right-20{grid-column: auto / span 20;}
+  div.col-sm-right-21{grid-column: auto / span 21;}
+  div.col-sm-right-22{grid-column: auto / span 22;}
+  div.col-sm-right-23{grid-column: auto / span 23;}
+  div.col-sm-right-24{grid-column: auto / span 24;}
+  div.col-sm-right-25{grid-column: auto / span 25;}
+  div.col-sm-right-26{grid-column: auto / span 26;}
+  div.col-sm-right-27{grid-column: auto / span 27;}
+  div.col-sm-right-28{grid-column: auto / span 28;}
+  div.col-sm-right-29{grid-column: auto / span 29;}
+  div.col-sm-right-30{grid-column: auto / span 30;}
+  div.col-sm-right-31{grid-column: auto / span 31;}
+  div.col-sm-right-32{grid-column: auto / span 32;}
+  div.col-sm-right-33{grid-column: auto / span 33;}
+  div.col-sm-right-34{grid-column: auto / span 34;}
+  div.col-sm-right-35{grid-column: auto / span 35;}
+  div.col-sm-right-36{grid-column: auto / span 36;}
+
+  /* 定义水平向左偏移 */
+  div.col-sm-left-1{grid-column: span 1 / auto;}
+  div.col-sm-left-2{grid-column: span 2 / auto;}
+  div.col-sm-left-3{grid-column: span 3 / auto;}
+  div.col-sm-left-4{grid-column: span 4 / auto;}
+  div.col-sm-left-5{grid-column: span 5 / auto;}
+  div.col-sm-left-6{grid-column: span 6 / auto;}
+  div.col-sm-left-7{grid-column: span 7 / auto;}
+  div.col-sm-left-8{grid-column: span 8 / auto;}
+  div.col-sm-left-9{grid-column: span 9 / auto;}
+  div.col-sm-left-10{grid-column: span 10 / auto;}
+  div.col-sm-left-11{grid-column: span 11 / auto;}
+  div.col-sm-left-12{grid-column: span 12 / auto;}
+  div.col-sm-left-13{grid-column: span 13 / auto;}
+  div.col-sm-left-14{grid-column: span 14 / auto;}
+  div.col-sm-left-15{grid-column: span 15 / auto;}
+  div.col-sm-left-16{grid-column: span 16 / auto;}
+  div.col-sm-left-17{grid-column: span 17 / auto;}
+  div.col-sm-left-18{grid-column: span 18 / auto;}
+  div.col-sm-left-19{grid-column: span 19 / auto;}
+  div.col-sm-left-20{grid-column: span 20 / auto;}
+  div.col-sm-left-21{grid-column: span 21 / auto;}
+  div.col-sm-left-22{grid-column: span 22 / auto;}
+  div.col-sm-left-23{grid-column: span 23 / auto;}
+  div.col-sm-left-24{grid-column: span 24 / auto;}
+  div.col-sm-left-25{grid-column: span 25 / auto;}
+  div.col-sm-left-26{grid-column: span 26 / auto;}
+  div.col-sm-left-27{grid-column: span 27 / auto;}
+  div.col-sm-left-28{grid-column: span 28 / auto;}
+  div.col-sm-left-29{grid-column: span 29 / auto;}
+  div.col-sm-left-30{grid-column: span 30 / auto;}
+  div.col-sm-left-31{grid-column: span 31 / auto;}
+  div.col-sm-left-32{grid-column: span 32 / auto;}
+  div.col-sm-left-33{grid-column: span 33 / auto;}
+  div.col-sm-left-34{grid-column: span 34 / auto;}
+  div.col-sm-left-35{grid-column: span 35 / auto;}
+  div.col-sm-left-36{grid-column: span 36 / auto;}
+
+}
+
+@media screen and (min-width: 768px) {
+  /* 定义768~992px（中等屏幕）列 */
+  div.col-md-36{grid-area: auto / auto / auto / span 36;}
+  div.col-md-35{grid-area: auto / auto / auto / span 35;}
+  div.col-md-34{grid-area: auto / auto / auto / span 34;}
+  div.col-md-33{grid-area: auto / auto / auto / span 33;}
+  div.col-md-32{grid-area: auto / auto / auto / span 32;}
+  div.col-md-31{grid-area: auto / auto / auto / span 31;}
+  div.col-md-30{grid-area: auto / auto / auto / span 30;}
+  div.col-md-29{grid-area: auto / auto / auto / span 29;}
+  div.col-md-28{grid-area: auto / auto / auto / span 28;}
+  div.col-md-27{grid-area: auto / auto / auto / span 27;}
+  div.col-md-26{grid-area: auto / auto / auto / span 26;}
+  div.col-md-25{grid-area: auto / auto / auto / span 25;}
+  div.col-md-24{grid-area: auto / auto / auto / span 24;}
+  div.col-md-23{grid-area: auto / auto / auto / span 23;}
+  div.col-md-22{grid-area: auto / auto / auto / span 22;}
+  div.col-md-21{grid-area: auto / auto / auto / span 21;}
+  div.col-md-20{grid-area: auto / auto / auto / span 20;}
+  div.col-md-19{grid-area: auto / auto / auto / span 19;}
+  div.col-md-18{grid-area: auto / auto / auto / span 18;}
+  div.col-md-17{grid-area: auto / auto / auto / span 17;}
+  div.col-md-16{grid-area: auto / auto / auto / span 16;}
+  div.col-md-15{grid-area: auto / auto / auto / span 15;}
+  div.col-md-14{grid-area: auto / auto / auto / span 14;}
+  div.col-md-13{grid-area: auto / auto / auto / span 13;}
+  div.col-md-12{grid-area: auto / auto / auto / span 12;}
+  div.col-md-11{grid-area: auto / auto / auto / span 11;}
+  div.col-md-10{grid-area: auto / auto / auto / span 10;}
+  div.col-md-9{grid-area: auto / auto / auto / span 9;}
+  div.col-md-8{grid-area: auto / auto / auto / span 8;}
+  div.col-md-7{grid-area: auto / auto / auto / span 7;}
+  div.col-md-6{grid-area: auto / auto / auto / span 6;}
+  div.col-md-5{grid-area: auto / auto / auto / span 5;}
+  div.col-md-4{grid-area: auto / auto / auto / span 4;}
+  div.col-md-3{grid-area: auto / auto / auto / span 3;}
+  div.col-md-2{grid-area: auto / auto / auto / span 2;}
+  div.col-md-1{grid-area: auto / auto / auto / span 1;}
+
+  /* 定义768~992px（中等屏幕）行 */
+  div.row-md-36{grid-column-end: span 36;}
+  div.row-md-35{grid-column-end: span 35;}
+  div.row-md-34{grid-column-end: span 34;}
+  div.row-md-33{grid-column-end: span 33;}
+  div.row-md-32{grid-column-end: span 32;}
+  div.row-md-31{grid-column-end: span 31;}
+  div.row-md-30{grid-column-end: span 30;}
+  div.row-md-29{grid-column-end: span 29;}
+  div.row-md-28{grid-column-end: span 28;}
+  div.row-md-27{grid-column-end: span 27;}
+  div.row-md-26{grid-column-end: span 26;}
+  div.row-md-25{grid-column-end: span 25;}
+  div.row-md-24{grid-column-end: span 24;}
+  div.row-md-23{grid-column-end: span 23;}
+  div.row-md-22{grid-column-end: span 22;}
+  div.row-md-21{grid-column-end: span 21;}
+  div.row-md-20{grid-column-end: span 20;}
+  div.row-md-19{grid-column-end: span 19;}
+  div.row-md-18{grid-column-end: span 18;}
+  div.row-md-17{grid-column-end: span 17;}
+  div.row-md-16{grid-column-end: span 16;}
+  div.row-md-15{grid-column-end: span 15;}
+  div.row-md-14{grid-column-end: span 14;}
+  div.row-md-13{grid-column-end: span 13;}
+  div.row-md-12{grid-column-end: span 12;}
+  div.row-md-11{grid-column-end: span 11;}
+  div.row-md-10{grid-column-end: span 10;}
+  div.row-md-9{grid-column-end: span 9;}
+  div.row-md-8{grid-column-end: span 8;}
+  div.row-md-7{grid-column-end: span 7;}
+  div.row-md-6{grid-column-end: span 6;}
+  div.row-md-5{grid-column-end: span 5;}
+  div.row-md-4{grid-column-end: span 4;}
+  div.row-md-3{grid-column-end: span 3;}
+  div.row-md-2{grid-column-end: span 2;}
+  div.row-md-1{grid-column-end: span 1;}
+
+  /* 定义水平右偏移 */
+  div.col-md-right-1{grid-column: auto / span 1;}
+  div.col-md-right-2{grid-column: auto / span 2;}
+  div.col-md-right-3{grid-column: auto / span 3;}
+  div.col-md-right-4{grid-column: auto / span 4;}
+  div.col-md-right-5{grid-column: auto / span 5;}
+  div.col-md-right-6{grid-column: auto / span 6;}
+  div.col-md-right-7{grid-column: auto / span 7;}
+  div.col-md-right-8{grid-column: auto / span 8;}
+  div.col-md-right-9{grid-column: auto / span 9;}
+  div.col-md-right-10{grid-column: auto / span 10;}
+  div.col-md-right-11{grid-column: auto / span 11;}
+  div.col-md-right-12{grid-column: auto / span 12;}
+  div.col-md-right-13{grid-column: auto / span 13;}
+  div.col-md-right-14{grid-column: auto / span 14;}
+  div.col-md-right-15{grid-column: auto / span 15;}
+  div.col-md-right-16{grid-column: auto / span 16;}
+  div.col-md-right-17{grid-column: auto / span 17;}
+  div.col-md-right-18{grid-column: auto / span 18;}
+  div.col-md-right-19{grid-column: auto / span 19;}
+  div.col-md-right-20{grid-column: auto / span 20;}
+  div.col-md-right-21{grid-column: auto / span 21;}
+  div.col-md-right-22{grid-column: auto / span 22;}
+  div.col-md-right-23{grid-column: auto / span 23;}
+  div.col-md-right-24{grid-column: auto / span 24;}
+  div.col-md-right-25{grid-column: auto / span 25;}
+  div.col-md-right-26{grid-column: auto / span 26;}
+  div.col-md-right-27{grid-column: auto / span 27;}
+  div.col-md-right-28{grid-column: auto / span 28;}
+  div.col-md-right-29{grid-column: auto / span 29;}
+  div.col-md-right-30{grid-column: auto / span 30;}
+  div.col-md-right-31{grid-column: auto / span 31;}
+  div.col-md-right-32{grid-column: auto / span 32;}
+  div.col-md-right-33{grid-column: auto / span 33;}
+  div.col-md-right-34{grid-column: auto / span 34;}
+  div.col-md-right-35{grid-column: auto / span 35;}
+  div.col-md-right-36{grid-column: auto / span 36;}
+
+  /* 定义水平左偏移 */
+  div.col-md-left-1{grid-column: span 1 / auto;}
+  div.col-md-left-2{grid-column: span 2 / auto;}
+  div.col-md-left-3{grid-column: span 3 / auto;}
+  div.col-md-left-4{grid-column: span 4 / auto;}
+  div.col-md-left-5{grid-column: span 5 / auto;}
+  div.col-md-left-6{grid-column: span 6 / auto;}
+  div.col-md-left-7{grid-column: span 7 / auto;}
+  div.col-md-left-8{grid-column: span 8 / auto;}
+  div.col-md-left-9{grid-column: span 9 / auto;}
+  div.col-md-left-10{grid-column: span 10 / auto;}
+  div.col-md-left-11{grid-column: span 11 / auto;}
+  div.col-md-left-12{grid-column: span 12 / auto;}
+  div.col-md-left-13{grid-column: span 13 / auto;}
+  div.col-md-left-14{grid-column: span 14 / auto;}
+  div.col-md-left-15{grid-column: span 15 / auto;}
+  div.col-md-left-16{grid-column: span 16 / auto;}
+  div.col-md-left-17{grid-column: span 17 / auto;}
+  div.col-md-left-18{grid-column: span 18 / auto;}
+  div.col-md-left-19{grid-column: span 19 / auto;}
+  div.col-md-left-20{grid-column: span 20 / auto;}
+  div.col-md-left-21{grid-column: span 21 / auto;}
+  div.col-md-left-22{grid-column: span 22 / auto;}
+  div.col-md-left-23{grid-column: span 23 / auto;}
+  div.col-md-left-24{grid-column: span 24 / auto;}
+  div.col-md-left-25{grid-column: span 25 / auto;}
+  div.col-md-left-26{grid-column: span 26 / auto;}
+  div.col-md-left-27{grid-column: span 27 / auto;}
+  div.col-md-left-28{grid-column: span 28 / auto;}
+  div.col-md-left-29{grid-column: span 29 / auto;}
+  div.col-md-left-30{grid-column: span 30 / auto;}
+  div.col-md-left-31{grid-column: span 31 / auto;}
+  div.col-md-left-32{grid-column: span 32 / auto;}
+  div.col-md-left-33{grid-column: span 33 / auto;}
+  div.col-md-left-34{grid-column: span 34 / auto;}
+  div.col-md-left-35{grid-column: span 35 / auto;}
+  div.col-md-left-36{grid-column: span 36 / auto;}
+}
+
+@media screen and (min-width: 992px) {
+  /* 定义992~1200px（大屏幕设备）列 */
+  div.col-lg-36{grid-area: auto / auto / auto /span 36;}
+  div.col-lg-35{grid-area: auto / auto / auto /span 35;}
+  div.col-lg-34{grid-area: auto / auto / auto /span 34;}
+  div.col-lg-33{grid-area: auto / auto / auto /span 33;}
+  div.col-lg-32{grid-area: auto / auto / auto /span 32;}
+  div.col-lg-31{grid-area: auto / auto / auto /span 31;}
+  div.col-lg-30{grid-area: auto / auto / auto /span 30;}
+  div.col-lg-29{grid-area: auto / auto / auto /span 29;}
+  div.col-lg-28{grid-area: auto / auto / auto /span 28;}
+  div.col-lg-27{grid-area: auto / auto / auto /span 27;}
+  div.col-lg-26{grid-area: auto / auto / auto /span 26;}
+  div.col-lg-25{grid-area: auto / auto / auto /span 25;}
+  div.col-lg-24{grid-area: auto / auto / auto /span 24;}
+  div.col-lg-23{grid-area: auto / auto / auto /span 23;}
+  div.col-lg-22{grid-area: auto / auto / auto /span 22;}
+  div.col-lg-21{grid-area: auto / auto / auto /span 21;}
+  div.col-lg-20{grid-area: auto / auto / auto /span 20;}
+  div.col-lg-19{grid-area: auto / auto / auto /span 19;}
+  div.col-lg-18{grid-area: auto / auto / auto /span 18;}
+  div.col-lg-17{grid-area: auto / auto / auto /span 17;}
+  div.col-lg-16{grid-area: auto / auto / auto /span 16;}
+  div.col-lg-15{grid-area: auto / auto / auto /span 15;}
+  div.col-lg-14{grid-area: auto / auto / auto /span 14;}
+  div.col-lg-13{grid-area: auto / auto / auto /span 13;}
+  div.col-lg-12{grid-area: auto / auto / auto /span 12;}
+  div.col-lg-11{grid-area: auto / auto / auto /span 11;}
+  div.col-lg-10{grid-area: auto / auto / auto /span 10;}
+  div.col-lg-9{grid-area: auto / auto / auto / span 9;}
+  div.col-lg-8{grid-area: auto / auto / auto / span 8;}
+  div.col-lg-7{grid-area: auto / auto / auto / span 7;}
+  div.col-lg-6{grid-area: auto / auto / auto / span 6;}
+  div.col-lg-5{grid-area: auto / auto / auto / span 5;}
+  div.col-lg-4{grid-area: auto / auto / auto / span 4;}
+  div.col-lg-3{grid-area: auto / auto / auto / span 3;}
+  div.col-lg-2{grid-area: auto / auto / auto / span 2;}
+  div.col-lg-1{grid-area: auto / auto / auto / span 1;}
+
+  /* 定义992~1200px（大屏幕）设备行 */
+  div.row-lg-36{grid-column-end: span 36;}
+  div.row-lg-35{grid-column-end: span 35;}
+  div.row-lg-34{grid-column-end: span 34;}
+  div.row-lg-33{grid-column-end: span 33;}
+  div.row-lg-32{grid-column-end: span 32;}
+  div.row-lg-31{grid-column-end: span 31;}
+  div.row-lg-30{grid-column-end: span 30;}
+  div.row-lg-29{grid-column-end: span 29;}
+  div.row-lg-28{grid-column-end: span 28;}
+  div.row-lg-27{grid-column-end: span 27;}
+  div.row-lg-26{grid-column-end: span 26;}
+  div.row-lg-25{grid-column-end: span 25;}
+  div.row-lg-24{grid-column-end: span 24;}
+  div.row-lg-23{grid-column-end: span 23;}
+  div.row-lg-22{grid-column-end: span 22;}
+  div.row-lg-21{grid-column-end: span 21;}
+  div.row-lg-20{grid-column-end: span 20;}
+  div.row-lg-19{grid-column-end: span 19;}
+  div.row-lg-18{grid-column-end: span 18;}
+  div.row-lg-17{grid-column-end: span 17;}
+  div.row-lg-16{grid-column-end: span 16;}
+  div.row-lg-15{grid-column-end: span 15;}
+  div.row-lg-14{grid-column-end: span 14;}
+  div.row-lg-13{grid-column-end: span 13;}
+  div.row-lg-12{grid-column-end: span 12;}
+  div.row-lg-11{grid-column-end: span 11;}
+  div.row-lg-10{grid-column-end: span 10;}
+  div.row-lg-9{grid-column-end: span 9;}
+  div.row-lg-8{grid-column-end: span 8;}
+  div.row-lg-7{grid-column-end: span 7;}
+  div.row-lg-6{grid-column-end: span 6;}
+  div.row-lg-5{grid-column-end: span 5;}
+  div.row-lg-4{grid-column-end: span 4;}
+  div.row-lg-3{grid-column-end: span 3;}
+  div.row-lg-2{grid-column-end: span 2;}
+  div.row-lg-1{grid-column-end: span 1;}
+
+  /* 定义水平右偏移 */
+  div.col-lg-right-1{grid-column: auto / span 1;}
+  div.col-lg-right-2{grid-column: auto / span 2;}
+  div.col-lg-right-3{grid-column: auto / span 3;}
+  div.col-lg-right-4{grid-column: auto / span 4;}
+  div.col-lg-right-5{grid-column: auto / span 5;}
+  div.col-lg-right-6{grid-column: auto / span 6;}
+  div.col-lg-right-7{grid-column: auto / span 7;}
+  div.col-lg-right-8{grid-column: auto / span 8;}
+  div.col-lg-right-9{grid-column: auto / span 9;}
+  div.col-lg-right-10{grid-column: auto / span 10;}
+  div.col-lg-right-11{grid-column: auto / span 11;}
+  div.col-lg-right-12{grid-column: auto / span 12;}
+  div.col-lg-right-13{grid-column: auto / span 13;}
+  div.col-lg-right-14{grid-column: auto / span 14;}
+  div.col-lg-right-15{grid-column: auto / span 15;}
+  div.col-lg-right-16{grid-column: auto / span 16;}
+  div.col-lg-right-17{grid-column: auto / span 17;}
+  div.col-lg-right-18{grid-column: auto / span 18;}
+  div.col-lg-right-19{grid-column: auto / span 19;}
+  div.col-lg-right-20{grid-column: auto / span 20;}
+  div.col-lg-right-21{grid-column: auto / span 21;}
+  div.col-lg-right-22{grid-column: auto / span 22;}
+  div.col-lg-right-23{grid-column: auto / span 23;}
+  div.col-lg-right-24{grid-column: auto / span 24;}
+  div.col-lg-right-25{grid-column: auto / span 25;}
+  div.col-lg-right-26{grid-column: auto / span 26;}
+  div.col-lg-right-27{grid-column: auto / span 27;}
+  div.col-lg-right-28{grid-column: auto / span 28;}
+  div.col-lg-right-29{grid-column: auto / span 29;}
+  div.col-lg-right-30{grid-column: auto / span 30;}
+  div.col-lg-right-31{grid-column: auto / span 31;}
+  div.col-lg-right-32{grid-column: auto / span 32;}
+  div.col-lg-right-33{grid-column: auto / span 33;}
+  div.col-lg-right-34{grid-column: auto / span 34;}
+  div.col-lg-right-35{grid-column: auto / span 35;}
+  div.col-lg-right-36{grid-column: auto / span 36;}
+
+  /* 定义水平向左偏移 */
+  div.col-lg-left-1{grid-column: span 1 / auto;}
+  div.col-lg-left-2{grid-column: span 2 / auto;}
+  div.col-lg-left-3{grid-column: span 3 / auto;}
+  div.col-lg-left-4{grid-column: span 4 / auto;}
+  div.col-lg-left-5{grid-column: span 5 / auto;}
+  div.col-lg-left-6{grid-column: span 6 / auto;}
+  div.col-lg-left-7{grid-column: span 7 / auto;}
+  div.col-lg-left-8{grid-column: span 8 / auto;}
+  div.col-lg-left-9{grid-column: span 9 / auto;}
+  div.col-lg-left-10{grid-column: span 10 / auto;}
+  div.col-lg-left-11{grid-column: span 11 / auto;}
+  div.col-lg-left-12{grid-column: span 12 / auto;}
+  div.col-lg-left-13{grid-column: span 13 / auto;}
+  div.col-lg-left-14{grid-column: span 14 / auto;}
+  div.col-lg-left-15{grid-column: span 15 / auto;}
+  div.col-lg-left-16{grid-column: span 16 / auto;}
+  div.col-lg-left-17{grid-column: span 17 / auto;}
+  div.col-lg-left-18{grid-column: span 18 / auto;}
+  div.col-lg-left-19{grid-column: span 19 / auto;}
+  div.col-lg-left-20{grid-column: span 20 / auto;}
+  div.col-lg-left-21{grid-column: span 21 / auto;}
+  div.col-lg-left-22{grid-column: span 22 / auto;}
+  div.col-lg-left-23{grid-column: span 23 / auto;}
+  div.col-lg-left-24{grid-column: span 24 / auto;}
+  div.col-lg-left-25{grid-column: span 25 / auto;}
+  div.col-lg-left-26{grid-column: span 26 / auto;}
+  div.col-lg-left-27{grid-column: span 27 / auto;}
+  div.col-lg-left-28{grid-column: span 28 / auto;}
+  div.col-lg-left-29{grid-column: span 29 / auto;}
+  div.col-lg-left-30{grid-column: span 30 / auto;}
+  div.col-lg-left-31{grid-column: span 31 / auto;}
+  div.col-lg-left-32{grid-column: span 32 / auto;}
+  div.col-lg-left-33{grid-column: span 33 / auto;}
+  div.col-lg-left-34{grid-column: span 34 / auto;}
+  div.col-lg-left-35{grid-column: span 35 / auto;}
+  div.col-lg-left-36{grid-column: span 36 / auto;}
+}
+
+@media screen and (min-width: 1200px) {
+  /* 定义1200~1400px（加大屏幕）的列 */
+  div.col-xl-36{grid-area: auto / auto / auto/ span 36;}
+  div.col-xl-35{grid-area: auto / auto / auto/ span 35;}
+  div.col-xl-34{grid-area: auto / auto / auto/ span 34;}
+  div.col-xl-33{grid-area: auto / auto / auto/ span 33;}
+  div.col-xl-32{grid-area: auto / auto / auto/ span 32;}
+  div.col-xl-31{grid-area: auto / auto / auto/ span 31;}
+  div.col-xl-30{grid-area: auto / auto / auto/ span 30;}
+  div.col-xl-29{grid-area: auto / auto / auto/ span 29;}
+  div.col-xl-28{grid-area: auto / auto / auto/ span 28;}
+  div.col-xl-27{grid-area: auto / auto / auto/ span 27;}
+  div.col-xl-26{grid-area: auto / auto / auto/ span 26;}
+  div.col-xl-25{grid-area: auto / auto / auto/ span 25;}
+  div.col-xl-24{grid-area: auto / auto / auto/ span 24;}
+  div.col-xl-23{grid-area: auto / auto / auto/ span 23;}
+  div.col-xl-22{grid-area: auto / auto / auto/ span 22;}
+  div.col-xl-21{grid-area: auto / auto / auto/ span 21;}
+  div.col-xl-20{grid-area: auto / auto / auto/ span 20;}
+  div.col-xl-19{grid-area: auto / auto / auto/ span 19;}
+  div.col-xl-18{grid-area: auto / auto / auto/ span 18;}
+  div.col-xl-17{grid-area: auto / auto / auto/ span 17;}
+  div.col-xl-16{grid-area: auto / auto / auto/ span 16;}
+  div.col-xl-15{grid-area: auto / auto / auto/ span 15;}
+  div.col-xl-14{grid-area: auto / auto / auto/ span 14;}
+  div.col-xl-13{grid-area: auto / auto / auto/ span 13;}
+  div.col-xl-12{grid-area: auto / auto / auto/ span 12;}
+  div.col-xl-11{grid-area: auto / auto / auto/ span 11;}
+  div.col-xl-10{grid-area: auto / auto / auto/ span 10;}
+  div.col-xl-9{grid-area: auto / auto / auto / span 9;}
+  div.col-xl-8{grid-area: auto / auto / auto / span 8;}
+  div.col-xl-7{grid-area: auto / auto / auto / span 7;}
+  div.col-xl-6{grid-area: auto / auto / auto / span 6;}
+  div.col-xl-5{grid-area: auto / auto / auto / span 5;}
+  div.col-xl-4{grid-area: auto / auto / auto / span 4;}
+  div.col-xl-3{grid-area: auto / auto / auto / span 3;}
+  div.col-xl-2{grid-area: auto / auto / auto / span 2;}
+  div.col-xl-1{grid-area: auto / auto / auto / span 1;}
+
+  /* 定义1200~1400px（加大屏幕）的行 */
+  div.row-xl-36{grid-column-end: span 36;}
+  div.row-xl-35{grid-column-end: span 35;}
+  div.row-xl-34{grid-column-end: span 34;}
+  div.row-xl-33{grid-column-end: span 33;}
+  div.row-xl-32{grid-column-end: span 32;}
+  div.row-xl-31{grid-column-end: span 31;}
+  div.row-xl-30{grid-column-end: span 30;}
+  div.row-xl-29{grid-column-end: span 29;}
+  div.row-xl-28{grid-column-end: span 28;}
+  div.row-xl-27{grid-column-end: span 27;}
+  div.row-xl-26{grid-column-end: span 26;}
+  div.row-xl-25{grid-column-end: span 25;}
+  div.row-xl-24{grid-column-end: span 24;}
+  div.row-xl-23{grid-column-end: span 23;}
+  div.row-xl-22{grid-column-end: span 22;}
+  div.row-xl-21{grid-column-end: span 21;}
+  div.row-xl-20{grid-column-end: span 20;}
+  div.row-xl-19{grid-column-end: span 19;}
+  div.row-xl-18{grid-column-end: span 18;}
+  div.row-xl-17{grid-column-end: span 17;}
+  div.row-xl-16{grid-column-end: span 16;}
+  div.row-xl-15{grid-column-end: span 15;}
+  div.row-xl-14{grid-column-end: span 14;}
+  div.row-xl-13{grid-column-end: span 13;}
+  div.row-xl-12{grid-column-end: span 12;}
+  div.row-xl-11{grid-column-end: span 11;}
+  div.row-xl-10{grid-column-end: span 10;}
+  div.row-xl-9{grid-column-end: span 9;}
+  div.row-xl-8{grid-column-end: span 8;}
+  div.row-xl-7{grid-column-end: span 7;}
+  div.row-xl-6{grid-column-end: span 6;}
+  div.row-xl-5{grid-column-end: span 5;}
+  div.row-xl-4{grid-column-end: span 4;}
+  div.row-xl-3{grid-column-end: span 3;}
+  div.row-xl-2{grid-column-end: span 2;}
+  div.row-xl-1{grid-column-end: span 1;}
+
+  /* 定义水平右偏移 */
+  div.col-xl-right-1{grid-column: auto / span 1;}
+  div.col-xl-right-2{grid-column: auto / span 2;}
+  div.col-xl-right-3{grid-column: auto / span 3;}
+  div.col-xl-right-4{grid-column: auto / span 4;}
+  div.col-xl-right-5{grid-column: auto / span 5;}
+  div.col-xl-right-6{grid-column: auto / span 6;}
+  div.col-xl-right-7{grid-column: auto / span 7;}
+  div.col-xl-right-8{grid-column: auto / span 8;}
+  div.col-xl-right-9{grid-column: auto / span 9;}
+  div.col-xl-right-10{grid-column: auto / span 10;}
+  div.col-xl-right-11{grid-column: auto / span 11;}
+  div.col-xl-right-12{grid-column: auto / span 12;}
+  div.col-xl-right-13{grid-column: auto / span 13;}
+  div.col-xl-right-14{grid-column: auto / span 14;}
+  div.col-xl-right-15{grid-column: auto / span 15;}
+  div.col-xl-right-16{grid-column: auto / span 16;}
+  div.col-xl-right-17{grid-column: auto / span 17;}
+  div.col-xl-right-18{grid-column: auto / span 18;}
+  div.col-xl-right-19{grid-column: auto / span 19;}
+  div.col-xl-right-20{grid-column: auto / span 20;}
+  div.col-xl-right-21{grid-column: auto / span 21;}
+  div.col-xl-right-22{grid-column: auto / span 22;}
+  div.col-xl-right-23{grid-column: auto / span 23;}
+  div.col-xl-right-24{grid-column: auto / span 24;}
+  div.col-xl-right-25{grid-column: auto / span 25;}
+  div.col-xl-right-26{grid-column: auto / span 26;}
+  div.col-xl-right-27{grid-column: auto / span 27;}
+  div.col-xl-right-28{grid-column: auto / span 28;}
+  div.col-xl-right-29{grid-column: auto / span 29;}
+  div.col-xl-right-30{grid-column: auto / span 30;}
+  div.col-xl-right-31{grid-column: auto / span 31;}
+  div.col-xl-right-32{grid-column: auto / span 32;}
+  div.col-xl-right-33{grid-column: auto / span 33;}
+  div.col-xl-right-34{grid-column: auto / span 34;}
+  div.col-xl-right-35{grid-column: auto / span 35;}
+  div.col-xl-right-36{grid-column: auto / span 36;}
+
+  /* 定义水平左偏移 */
+  div.col-xl-left-1{grid-column: span 1 / auto;}
+  div.col-xl-left-2{grid-column: span 2 / auto;}
+  div.col-xl-left-3{grid-column: span 3 / auto;}
+  div.col-xl-left-4{grid-column: span 4 / auto;}
+  div.col-xl-left-5{grid-column: span 5 / auto;}
+  div.col-xl-left-6{grid-column: span 6 / auto;}
+  div.col-xl-left-7{grid-column: span 7 / auto;}
+  div.col-xl-left-8{grid-column: span 8 / auto;}
+  div.col-xl-left-9{grid-column: span 9 / auto;}
+  div.col-xl-left-10{grid-column: span 10 / auto;}
+  div.col-xl-left-11{grid-column: span 11 / auto;}
+  div.col-xl-left-12{grid-column: span 12 / auto;}
+  div.col-xl-left-13{grid-column: span 13 / auto;}
+  div.col-xl-left-14{grid-column: span 14 / auto;}
+  div.col-xl-left-15{grid-column: span 15 / auto;}
+  div.col-xl-left-16{grid-column: span 16 / auto;}
+  div.col-xl-left-17{grid-column: span 17 / auto;}
+  div.col-xl-left-18{grid-column: span 18 / auto;}
+  div.col-xl-left-19{grid-column: span 19 / auto;}
+  div.col-xl-left-20{grid-column: span 20 / auto;}
+  div.col-xl-left-21{grid-column: span 21 / auto;}
+  div.col-xl-left-22{grid-column: span 22 / auto;}
+  div.col-xl-left-23{grid-column: span 23 / auto;}
+  div.col-xl-left-24{grid-column: span 24 / auto;}
+  div.col-xl-left-25{grid-column: span 25 / auto;}
+  div.col-xl-left-26{grid-column: span 26 / auto;}
+  div.col-xl-left-27{grid-column: span 27 / auto;}
+  div.col-xl-left-28{grid-column: span 28 / auto;}
+  div.col-xl-left-29{grid-column: span 29 / auto;}
+  div.col-xl-left-30{grid-column: span 30 / auto;}
+  div.col-xl-left-31{grid-column: span 31 / auto;}
+  div.col-xl-left-32{grid-column: span 32 / auto;}
+  div.col-xl-left-33{grid-column: span 33 / auto;}
+  div.col-xl-left-34{grid-column: span 34 / auto;}
+  div.col-xl-left-35{grid-column: span 35 / auto;}
+  div.col-xl-left-36{grid-column: span 36 / auto;}
+}
+
+@media screen and (min-width: 1400px) {
+  /* 定义1400px（超大屏幕）的列 */
+  div.col-xxl-36{grid-area: auto / auto / auto / span 36;}
+  div.col-xxl-35{grid-area: auto / auto / auto / span 35;}
+  div.col-xxl-34{grid-area: auto / auto / auto / span 34;}
+  div.col-xxl-33{grid-area: auto / auto / auto / span 33;}
+  div.col-xxl-32{grid-area: auto / auto / auto / span 32;}
+  div.col-xxl-31{grid-area: auto / auto / auto / span 31;}
+  div.col-xxl-30{grid-area: auto / auto / auto / span 30;}
+  div.col-xxl-29{grid-area: auto / auto / auto / span 29;}
+  div.col-xxl-28{grid-area: auto / auto / auto / span 28;}
+  div.col-xxl-27{grid-area: auto / auto / auto / span 27;}
+  div.col-xxl-26{grid-area: auto / auto / auto / span 26;}
+  div.col-xxl-25{grid-area: auto / auto / auto / span 25;}
+  div.col-xxl-24{grid-area: auto / auto / auto / span 24;}
+  div.col-xxl-23{grid-area: auto / auto / auto / span 23;}
+  div.col-xxl-22{grid-area: auto / auto / auto / span 22;}
+  div.col-xxl-21{grid-area: auto / auto / auto / span 21;}
+  div.col-xxl-20{grid-area: auto / auto / auto / span 20;}
+  div.col-xxl-19{grid-area: auto / auto / auto / span 19;}
+  div.col-xxl-18{grid-area: auto / auto / auto / span 18;}
+  div.col-xxl-17{grid-area: auto / auto / auto / span 17;}
+  div.col-xxl-16{grid-area: auto / auto / auto / span 16;}
+  div.col-xxl-15{grid-area: auto / auto / auto / span 15;}
+  div.col-xxl-14{grid-area: auto / auto / auto / span 14;}
+  div.col-xxl-13{grid-area: auto / auto / auto / span 13;}
+  div.col-xxl-12{grid-area: auto / auto / auto / span 12;}
+  div.col-xxl-11{grid-area: auto / auto / auto / span 11;}
+  div.col-xxl-10{grid-area: auto / auto / auto / span 10;}
+  div.col-xxl-9{grid-area: auto / auto / auto / span 9;}
+  div.col-xxl-8{grid-area: auto / auto / auto / span 8;}
+  div.col-xxl-7{grid-area: auto / auto / auto / span 7;}
+  div.col-xxl-6{grid-area: auto / auto / auto / span 6;}
+  div.col-xxl-5{grid-area: auto / auto / auto / span 5;}
+  div.col-xxl-4{grid-area: auto / auto / auto / span 4;}
+  div.col-xxl-3{grid-area: auto / auto / auto / span 3;}
+  div.col-xxl-2{grid-area: auto / auto / auto / span 2;}
+  div.col-xxl-1{grid-area: auto / auto / auto / span 1;}
+
+  /* 定义1400px（超大屏幕）的行 */
+  div.row-xxl-36{grid-column-end: span 36;}
+  div.row-xxl-35{grid-column-end: span 35;}
+  div.row-xxl-34{grid-column-end: span 34;}
+  div.row-xxl-33{grid-column-end: span 33;}
+  div.row-xxl-32{grid-column-end: span 32;}
+  div.row-xxl-31{grid-column-end: span 31;}
+  div.row-xxl-30{grid-column-end: span 30;}
+  div.row-xxl-29{grid-column-end: span 29;}
+  div.row-xxl-28{grid-column-end: span 28;}
+  div.row-xxl-27{grid-column-end: span 27;}
+  div.row-xxl-26{grid-column-end: span 26;}
+  div.row-xxl-25{grid-column-end: span 25;}
+  div.row-xxl-24{grid-column-end: span 24;}
+  div.row-xxl-23{grid-column-end: span 23;}
+  div.row-xxl-22{grid-column-end: span 22;}
+  div.row-xxl-21{grid-column-end: span 21;}
+  div.row-xxl-20{grid-column-end: span 20;}
+  div.row-xxl-19{grid-column-end: span 19;}
+  div.row-xxl-18{grid-column-end: span 18;}
+  div.row-xxl-17{grid-column-end: span 17;}
+  div.row-xxl-16{grid-column-end: span 16;}
+  div.row-xxl-15{grid-column-end: span 15;}
+  div.row-xxl-14{grid-column-end: span 14;}
+  div.row-xxl-13{grid-column-end: span 13;}
+  div.row-xxl-12{grid-column-end: span 12;}
+  div.row-xxl-11{grid-column-end: span 11;}
+  div.row-xxl-10{grid-column-end: span 10;}
+  div.row-xxl-9{grid-column-end: span 9;}
+  div.row-xxl-8{grid-column-end: span 8;}
+  div.row-xxl-7{grid-column-end: span 7;}
+  div.row-xxl-6{grid-column-end: span 6;}
+  div.row-xxl-5{grid-column-end: span 5;}
+  div.row-xxl-4{grid-column-end: span 4;}
+  div.row-xxl-3{grid-column-end: span 3;}
+  div.row-xxl-2{grid-column-end: span 2;}
+  div.row-xxl-1{grid-column-end: span 1;}
+
+  /* 定义水平右偏移 */
+  div.col-xxl-right-1{grid-column: auto / span 1;}
+  div.col-xxl-right-2{grid-column: auto / span 2;}
+  div.col-xxl-right-3{grid-column: auto / span 3;}
+  div.col-xxl-right-4{grid-column: auto / span 4;}
+  div.col-xxl-right-5{grid-column: auto / span 5;}
+  div.col-xxl-right-6{grid-column: auto / span 6;}
+  div.col-xxl-right-7{grid-column: auto / span 7;}
+  div.col-xxl-right-8{grid-column: auto / span 8;}
+  div.col-xxl-right-9{grid-column: auto / span 9;}
+  div.col-xxl-right-10{grid-column: auto / span 10;}
+  div.col-xxl-right-11{grid-column: auto / span 11;}
+  div.col-xxl-right-12{grid-column: auto / span 12;}
+  div.col-xxl-right-13{grid-column: auto / span 13;}
+  div.col-xxl-right-14{grid-column: auto / span 14;}
+  div.col-xxl-right-15{grid-column: auto / span 15;}
+  div.col-xxl-right-16{grid-column: auto / span 16;}
+  div.col-xxl-right-17{grid-column: auto / span 17;}
+  div.col-xxl-right-18{grid-column: auto / span 18;}
+  div.col-xxl-right-19{grid-column: auto / span 19;}
+  div.col-xxl-right-20{grid-column: auto / span 20;}
+  div.col-xxl-right-21{grid-column: auto / span 21;}
+  div.col-xxl-right-22{grid-column: auto / span 22;}
+  div.col-xxl-right-23{grid-column: auto / span 23;}
+  div.col-xxl-right-24{grid-column: auto / span 24;}
+  div.col-xxl-right-25{grid-column: auto / span 25;}
+  div.col-xxl-right-26{grid-column: auto / span 26;}
+  div.col-xxl-right-27{grid-column: auto / span 27;}
+  div.col-xxl-right-28{grid-column: auto / span 28;}
+  div.col-xxl-right-29{grid-column: auto / span 29;}
+  div.col-xxl-right-30{grid-column: auto / span 30;}
+  div.col-xxl-right-31{grid-column: auto / span 31;}
+  div.col-xxl-right-32{grid-column: auto / span 32;}
+  div.col-xxl-right-33{grid-column: auto / span 33;}
+  div.col-xxl-right-34{grid-column: auto / span 34;}
+  div.col-xxl-right-35{grid-column: auto / span 35;}
+  div.col-xxl-right-36{grid-column: auto / span 36;}
+
+  /* 定义水平左偏移 */
+  div.col-xxl-left-1{grid-column: span 1 / auto;}
+  div.col-xxl-left-2{grid-column: span 2 / auto;}
+  div.col-xxl-left-3{grid-column: span 3 / auto;}
+  div.col-xxl-left-4{grid-column: span 4 / auto;}
+  div.col-xxl-left-5{grid-column: span 5 / auto;}
+  div.col-xxl-left-6{grid-column: span 6 / auto;}
+  div.col-xxl-left-7{grid-column: span 7 / auto;}
+  div.col-xxl-left-8{grid-column: span 8 / auto;}
+  div.col-xxl-left-9{grid-column: span 9 / auto;}
+  div.col-xxl-left-10{grid-column: span 10 / auto;}
+  div.col-xxl-left-11{grid-column: span 11 / auto;}
+  div.col-xxl-left-12{grid-column: span 12 / auto;}
+  div.col-xxl-left-13{grid-column: span 13 / auto;}
+  div.col-xxl-left-14{grid-column: span 14 / auto;}
+  div.col-xxl-left-15{grid-column: span 15 / auto;}
+  div.col-xxl-left-16{grid-column: span 16 / auto;}
+  div.col-xxl-left-17{grid-column: span 17 / auto;}
+  div.col-xxl-left-18{grid-column: span 18 / auto;}
+  div.col-xxl-left-19{grid-column: span 19 / auto;}
+  div.col-xxl-left-20{grid-column: span 20 / auto;}
+  div.col-xxl-left-21{grid-column: span 21 / auto;}
+  div.col-xxl-left-22{grid-column: span 22 / auto;}
+  div.col-xxl-left-23{grid-column: span 23 / auto;}
+  div.col-xxl-left-24{grid-column: span 24 / auto;}
+  div.col-xxl-left-25{grid-column: span 25 / auto;}
+  div.col-xxl-left-26{grid-column: span 26 / auto;}
+  div.col-xxl-left-27{grid-column: span 27 / auto;}
+  div.col-xxl-left-28{grid-column: span 28 / auto;}
+  div.col-xxl-left-29{grid-column: span 29 / auto;}
+  div.col-xxl-left-30{grid-column: span 30 / auto;}
+  div.col-xxl-left-31{grid-column: span 31 / auto;}
+  div.col-xxl-left-32{grid-column: span 32 / auto;}
+  div.col-xxl-left-33{grid-column: span 33 / auto;}
+  div.col-xxl-left-34{grid-column: span 34 / auto;}
+  div.col-xxl-left-35{grid-column: span 35 / auto;}
+  div.col-xxl-left-36{grid-column: span 36 / auto;}
+}

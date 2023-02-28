@@ -1,0 +1,347 @@
+/*** 常用样式 ***/
+/*** 响应式布局工具函数 ***/
+/*** 小组件 ***/
+.contact .banner {
+  position: relative;
+  height: 1027px;
+}
+.contact .banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact .main {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.contact .main .lead {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 0;
+}
+.contact .main .lead .main-text {
+  font-size: 48px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.contact .main .lead .sub-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+@media screen and (max-width: 1200px) {
+  .contact .main .lead {
+    margin-top: 90px;
+    margin-bottom: 128px;
+  }
+  .contact .main .lead .main-text {
+    font-size: 44px;
+  }
+  .contact .main .lead .sub-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact .main .lead {
+    margin-top: 50px;
+    margin-bottom: 88px;
+  }
+  .contact .main .lead .main-text {
+    font-size: 42px;
+  }
+  .contact .main .lead .sub-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .main .lead {
+    margin-top: 20px;
+    margin-bottom: 58px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .contact .main .lead .main-text {
+    font-size: 40px;
+  }
+  .contact .main .lead .sub-text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact .main .lead {
+    margin-top: 0px;
+    margin-bottom: 38px;
+  }
+  .contact .main .lead .main-text {
+    font-size: 38px;
+  }
+  .contact .main .lead .sub-text {
+    font-size: 10px;
+  }
+}
+.contact .main > .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+.contact .main > .content .message-board {
+  width: 100%;
+}
+.contact .main > .content .message-board .title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.contact .main > .content .message-board .comment {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.contact .main > .content .message-board .form ul {
+  display: grid;
+  width: 100%;
+  height: 656px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 50px;
+  grid-template-areas: 'nm tl' 'ml ct' 'cp cp' 'ms ms' 'bt .';
+}
+.contact .main > .content .message-board .form ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contact .main > .content .message-board .form ul li:not(.btn) > *:last-child {
+  background: #ffffff;
+  border: 1px solid #dedede;
+}
+.contact .main > .content .message-board .form ul li label {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 7px;
+}
+.contact .main > .content .message-board .form ul li input {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.contact .main > .content .message-board .form ul li input[type='text'],
+.contact .main > .content .message-board .form ul li input[type='email'] {
+  width: 100%;
+}
+.contact .main > .content .message-board .form ul li input[type='submit'] {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262626;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (max-width: 576px) {
+  .contact .main > .content .message-board .form ul li input[type='submit'] {
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+.contact .main > .content .message-board .form ul li textarea {
+  height: 176px;
+  width: 100%;
+  resize: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  padding-left: 20px;
+  box-sizing: border-box;
+  padding: 15px 15px;
+}
+.contact .main > .content .message-board .form ul li.name {
+  grid-area: nm;
+}
+.contact .main > .content .message-board .form ul li.tel {
+  grid-area: tl;
+}
+.contact .main > .content .message-board .form ul li.mail {
+  grid-area: ml;
+}
+.contact .main > .content .message-board .form ul li.country {
+  grid-area: ct;
+}
+.contact .main > .content .message-board .form ul li.company {
+  grid-area: cp;
+}
+.contact .main > .content .message-board .form ul li.message {
+  grid-area: ms;
+  margin-bottom: 50px;
+  position: relative;
+}
+.contact .main > .content .message-board .form ul li.message .count-tip {
+  font-size: 14px;
+  color: #999999;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  user-select: none;
+}
+.contact .main > .content .message-board .form ul li.btn {
+  grid-area: bt;
+  height: 50px;
+}
+@media screen and (max-width: 1600px) {
+  .contact .main > .content .message-board .form ul {
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .contact .main > .content .message-board .form ul {
+    height: 884px;
+    width: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 'nm' 'tl' 'ml' 'ct' 'cp' 'ms' 'bt';
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contact .main > .content .message-board .form ul {
+    width: 95%;
+    max-width: 500px;
+  }
+}
+.contact .main > .content .company-info {
+  width: 471px;
+  font-weight: 400;
+  justify-self: flex-end;
+}
+.contact .main > .content .company-info .title {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.contact .main > .content .company-info .info-list .title {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+.contact .main > .content .company-info .info-list .content {
+  font-size: 18px;
+  color: #666666;
+}
+.contact .main > .content .company-info .info-list li {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 576px) {
+  .contact .main > .content .company-info .info-list .title {
+    font-size: 17px;
+  }
+  .contact .main > .content .company-info .info-list .content {
+    font-size: 13px;
+  }
+}
+.contact .main > .content .company-info .icon-list {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .main > .content .company-info .icon-list li {
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .contact .main > .content .company-info .icon-list {
+    max-width: 380px;
+    width: 95%;
+  }
+}
+.contact .main .map {
+  width: 100%;
+  height: 609px;
+  margin-bottom: 100px;
+  background-color: aliceblue;
+}
+@media screen and (max-width: 1600px) {
+  .contact .main {
+    width: 90%;
+  }
+  .contact .main > .content .company-info {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .contact .main {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact .main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact .main > .content {
+    grid-template-columns: 1fr;
+  }
+  .contact .main > .content .message-board {
+    margin-bottom: 50px;
+  }
+  .contact .main > .content .message-board .title {
+    font-size: 27px;
+    margin-bottom: 35px;
+  }
+  .contact .main > .content .message-board .comment {
+    font-size: 17px;
+  }
+  .contact .main > .content .message-board .title,
+  .contact .main > .content .message-board .comment {
+    text-align: center;
+  }
+  .contact .main > .content .message-board .form ul {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+  .contact .main > .content .company-info {
+    justify-self: center;
+  }
+  .contact .main > .content .company-info > .title {
+    text-align: center;
+    font-size: 27px;
+  }
+  .contact .main > .content .company-info .info-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center center;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  .contact .main > .content .company-info .info-list .company-addr {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .contact .main > .content .company-info .info-list li {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .contact .main > .content .company-info .icon-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact .main {
+    width: 98%;
+  }
+}

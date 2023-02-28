@@ -1,0 +1,817 @@
+/*** 常用样式 ***/
+/*** 响应式布局工具函数 ***/
+/*** 小组件 ***/
+.environmental {
+  overflow: hidden;
+}
+.environmental .banner {
+  height: 800px;
+  width: 100%;
+  position: relative;
+}
+.environmental .banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.environmental .main {
+  max-width: 1790px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.environmental .main .lead {
+  margin-top: 100px;
+  margin-bottom: 138px;
+  margin-left: 93px;
+}
+.environmental .main .lead .main-text {
+  font-size: 48px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.environmental .main .lead .sub-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .lead {
+    margin-top: 90px;
+    margin-bottom: 128px;
+  }
+  .environmental .main .lead .main-text {
+    font-size: 44px;
+  }
+  .environmental .main .lead .sub-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .lead {
+    margin-top: 50px;
+    margin-bottom: 88px;
+  }
+  .environmental .main .lead .main-text {
+    font-size: 42px;
+  }
+  .environmental .main .lead .sub-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .lead {
+    margin-top: 20px;
+    margin-bottom: 58px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .environmental .main .lead .main-text {
+    font-size: 40px;
+  }
+  .environmental .main .lead .sub-text {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .environmental .main .lead {
+    margin-top: 0px;
+    margin-bottom: 38px;
+  }
+  .environmental .main .lead .main-text {
+    font-size: 38px;
+  }
+  .environmental .main .lead .sub-text {
+    font-size: 10px;
+  }
+}
+.environmental .main .protection .title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.environmental .main .protection .title .text {
+  position: relative;
+  z-index: 2;
+  padding: 0 35px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #fff;
+}
+.environmental .main .protection .title .line {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  height: 2px;
+  background-color: #eeeeee;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .protection .title .text {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .protection .title .text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .protection .title {
+    margin-bottom: 50px;
+  }
+  .environmental .main .protection .title .text {
+    font-size: 30px;
+  }
+}
+.environmental .main .protection .floor-1st {
+  position: relative;
+  height: 1296px;
+}
+.environmental .main .protection .floor-1st .pic1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 528px;
+  height: auto;
+  transform: translateX(50px);
+}
+.environmental .main .protection .floor-1st .pic2 {
+  width: 528px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 594px;
+  transform: translateX(-50px);
+}
+.environmental .main .protection .floor-1st .section1 {
+  position: absolute;
+  left: 19.22%;
+  top: 172px;
+}
+.environmental .main .protection .floor-1st .section1 p {
+  width: 41.7%;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.5;
+}
+.environmental .main .protection .floor-1st .section1 .title {
+  font-size: 13px;
+  font-family: Helvetica;
+  color: #e82e31;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 83px;
+}
+.environmental .main .protection .floor-1st .section2 {
+  position: absolute;
+  left: 37%;
+  top: 642px;
+}
+.environmental .main .protection .floor-1st .section2 p {
+  width: 407px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
+  white-space: pre-line;
+  margin-bottom: 100px;
+}
+.environmental .main .protection .floor-1st .section2 .btn {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 50px;
+  background-color: #262626;
+  cursor: pointer;
+  display: inline-block;
+}
+@media screen and (max-width: 1536px) {
+  .environmental .main .protection .floor-1st {
+    position: static;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .environmental .main .protection .floor-1st .pic1 {
+    position: static;
+    right: 0;
+    top: 0;
+    grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+    height: 658px;
+    transform: none;
+  }
+  .environmental .main .protection .floor-1st .pic1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .environmental .main .protection .floor-1st .pic2 {
+    position: static;
+    left: 0;
+    top: 0;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 658px;
+    width: 100%;
+    transform: none;
+  }
+  .environmental .main .protection .floor-1st .pic2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .environmental .main .protection .floor-1st .section1 {
+    position: static;
+    left: 0;
+    top: 0;
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+    align-self: center;
+  }
+  .environmental .main .protection .floor-1st .section1 p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.5;
+  }
+  .environmental .main .protection .floor-1st .section1 .title {
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #e82e31;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .environmental .main .protection .floor-1st .section2 {
+    position: static;
+    left: 0;
+    top: 0;
+    grid-area: 2 / 1 / 3 / 2;
+    place-self: center center;
+    text-align: center;
+  }
+  .environmental .main .protection .floor-1st .section2 p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 400;
+    color: #666666;
+    white-space: pre-line;
+    text-align: left;
+  }
+  .environmental .main .protection .floor-1st .section2 .btn {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #262626;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .protection .floor-1st {
+    width: 75%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 3fr 2fr);
+    gap: 30px;
+  }
+  .environmental .main .protection .floor-1st .pic1 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 658px;
+  }
+  .environmental .main .protection .floor-1st .pic2 {
+    grid-area: 3 / 1 / 4 / 2;
+    height: 658px;
+  }
+  .environmental .main .protection .floor-1st .section1 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .environmental .main .protection .floor-1st .section1 p {
+    width: 100%;
+    font-size: 30px;
+  }
+  .environmental .main .protection .floor-1st .section1 .title {
+    font-size: 13px;
+  }
+  .environmental .main .protection .floor-1st .section2 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .environmental .main .protection .floor-1st .section2 p {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+  .environmental .main .protection .floor-1st .section2 .btn {
+    padding: 10px 50px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .protection .floor-1st {
+    width: 85%;
+    grid-template-rows: repeat(2, 5fr 4fr);
+    gap: 25px;
+  }
+  .environmental .main .protection .floor-1st .pic1 {
+    height: 550px;
+  }
+  .environmental .main .protection .floor-1st .pic2 {
+    height: 550px;
+  }
+  .environmental .main .protection .floor-1st .section1 p {
+    font-size: 27px;
+  }
+  .environmental .main .protection .floor-1st .section1 .title {
+    font-size: 12px;
+  }
+  .environmental .main .protection .floor-1st .section2 p {
+    margin-bottom: 23px;
+    font-size: 20px;
+  }
+  .environmental .main .protection .floor-1st .section2 .btn {
+    padding: 8px 40px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .environmental .main .protection .floor-1st {
+    width: 90%;
+    grid-template-rows: repeat(2, 6fr 5fr);
+    gap: 25px;
+  }
+  .environmental .main .protection .floor-1st .pic1 {
+    height: 500px;
+  }
+  .environmental .main .protection .floor-1st .pic2 {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .environmental .main .protection .floor-1st {
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr 1fr);
+    gap: 0;
+  }
+  .environmental .main .protection .floor-1st .pic1 {
+    height: 400px;
+  }
+  .environmental .main .protection .floor-1st .pic2 {
+    height: 400px;
+  }
+  .environmental .main .protection .floor-1st .section1 {
+    text-align: center;
+  }
+  .environmental .main .protection .floor-1st .section1 p {
+    font-size: 24px;
+  }
+  .environmental .main .protection .floor-1st .section1 .title {
+    font-size: 12px;
+  }
+  .environmental .main .protection .floor-1st .section2 p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: center;
+  }
+  .environmental .main .protection .floor-1st .section2 .btn {
+    padding: 6px 30px;
+    font-size: 14px;
+  }
+}
+.environmental .main .protection .floor-2nd {
+  position: relative;
+}
+.environmental .main .protection .floor-2nd .container {
+  all: initial;
+  padding-bottom: 193px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 47px;
+  margin-top: 224px;
+}
+.environmental .main .protection .floor-2nd .container .item {
+  box-sizing: border-box;
+  padding: 109px 79px;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+}
+.environmental .main .protection .floor-2nd .container .item img {
+  margin-bottom: 50px;
+  vertical-align: middle;
+}
+.environmental .main .protection .floor-2nd .container .item .title {
+  margin-bottom: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+.environmental .main .protection .floor-2nd .container .item .section {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+.environmental .main .protection .floor-2nd .container .item:nth-child(2) {
+  transform: translateY(-114px);
+}
+@media screen and (max-width: 1600px) {
+  .environmental .main .protection .floor-2nd .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 120px;
+  }
+  .environmental .main .protection .floor-2nd .container .item:nth-child(1) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .environmental .main .protection .floor-2nd .container .item:nth-child(2) {
+    grid-area: 1 / 1 / 2 / 2;
+    transform: none;
+    transform: translateX(calc(50% + 20px));
+  }
+  .environmental .main .protection .floor-2nd .container .item:nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .protection .floor-2nd .container {
+    margin-top: 100px;
+    gap: 42px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .protection .floor-2nd .container {
+    margin-top: 80px;
+    padding-bottom: 130px;
+    gap: 37px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .protection .floor-2nd .container {
+    margin-top: 60px;
+    gap: 32px;
+  }
+  .environmental .main .protection .floor-2nd .container .item {
+    padding: 50px 20px;
+  }
+  .environmental .main .protection .floor-2nd .container .item img {
+    margin-bottom: 30px;
+  }
+  .environmental .main .protection .floor-2nd .container .item .title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .protection .floor-2nd .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 25px;
+    gap: 27px;
+  }
+  .environmental .main .protection .floor-2nd .container .item {
+    max-width: 400px;
+  }
+  .environmental .main .protection .floor-2nd .container .item:nth-child(1),
+  .environmental .main .protection .floor-2nd .container .item:nth-child(2),
+  .environmental .main .protection .floor-2nd .container .item:nth-child(3) {
+    grid-area: initial;
+  }
+  .environmental .main .protection .floor-2nd .container .item:nth-child(2) {
+    transform: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .environmental .main .protection .floor-2nd .container {
+    gap: 22px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .environmental .main .protection .floor-2nd .container {
+    max-width: 400px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .environmental .main .protection .floor-2nd .container .item {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .environmental .main .protection .floor-2nd .container .item .title {
+    font-size: 22px;
+  }
+  .environmental .main .protection .floor-2nd .container .item .section {
+    font-size: 16px;
+  }
+}
+.environmental .main .protection .floor-2nd .button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 193px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px dashed #000;
+}
+.environmental .main .protection .floor-2nd .button img {
+  width: 100%;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 1600px) {
+  .environmental .main .protection .floor-2nd .button {
+    bottom: 70px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .protection .floor-2nd .button {
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .environmental .main .protection .floor-2nd .button {
+    bottom: 30px;
+  }
+}
+.environmental .main .hungry .title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.environmental .main .hungry .title .text {
+  position: relative;
+  z-index: 2;
+  padding: 0 35px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #fff;
+}
+.environmental .main .hungry .title .line {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  height: 2px;
+  background-color: #eeeeee;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .hungry .title .text {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .hungry .title .text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .hungry .title {
+    margin-bottom: 50px;
+  }
+  .environmental .main .hungry .title .text {
+    font-size: 30px;
+  }
+}
+.environmental .main .hungry .floor-1st {
+  position: relative;
+  margin-bottom: 129px;
+}
+.environmental .main .hungry .floor-1st .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+  padding-bottom: 165px;
+}
+.environmental .main .hungry .floor-1st .container .item img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.environmental .main .hungry .floor-1st .container .item:nth-child(even) {
+  transform: translateY(20%);
+}
+@media screen and (max-width: 1600px) {
+  .environmental .main .hungry .floor-1st .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+  }
+  .environmental .main .hungry .floor-1st .container .item:nth-child(even) {
+    transform: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .hungry .floor-1st .container {
+    padding-bottom: 90px;
+    gap: 35px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .hungry .floor-1st .container {
+    padding-bottom: 90px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .hungry .floor-1st .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    min-width: initial;
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .environmental .main .hungry .floor-1st .container {
+    padding-bottom: 65px;
+    gap: 20px;
+  }
+}
+.environmental .main .hungry .floor-1st .button {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border: 1px dashed #000;
+  cursor: pointer;
+}
+.environmental .main .hungry .floor-1st .button img {
+  width: 100%;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .hungry .floor-1st {
+    margin-bottom: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .hungry .floor-1st {
+    margin-bottom: 50px;
+  }
+}
+.environmental .main .hungry .floor-2nd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px;
+}
+.environmental .main .hungry .floor-2nd .item {
+  border: 1px dashed #000;
+  position: relative;
+}
+.environmental .main .hungry .floor-2nd .item img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.environmental .main .hungry .floor-2nd .item .overlay {
+  position: absolute;
+  z-index: 1;
+  left: 29%;
+  right: 28%;
+  top: 31%;
+  bottom: 29%;
+  display: flex;
+  flex-direction: column;
+}
+.environmental .main .hungry .floor-2nd .item .overlay .title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 49px;
+  text-align: left;
+}
+.environmental .main .hungry .floor-2nd .item .overlay .detail {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 27px;
+  flex-grow: 1;
+}
+@media screen and (max-width: 1600px) {
+  .environmental .main .hungry .floor-2nd .item .overlay {
+    right: 25%;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    font-size: 24px;
+    margin-bottom: 49px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    margin-bottom: 20px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    font-size: 24px;
+    margin-bottom: 49px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .environmental .main .hungry .floor-2nd .item .overlay {
+    top: 26%;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .detail {
+    font-size: 13px;
+  }
+  .environmental .main .hungry .floor-2nd .item .overlay .title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .environmental .main .hungry .floor-2nd {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 90px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .environmental .main .hungry .floor-2nd {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .environmental .main .hungry .floor-2nd {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .environmental .main .hungry .floor-2nd {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 60px;
+  }
+  .environmental .main .hungry .floor-2nd .item {
+    max-width: 500px;
+  }
+}

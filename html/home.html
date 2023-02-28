@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="../static/css/home.css">
+  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/HappyImage.min.js"></script>
+  <script src="../static/js/header.js"></script>
+  <script src="../static/js/home.js"></script>
+  <style>
+    /* 修复迅速切换视口大小后，图片宽度无法占满屏幕的问题 */
+    .swiper {
+      width: 100% !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 页面头部 -->
+  <header class="header container">
+    <div class="container">
+      <div class="logo">
+        <img src="../static/imgs/header/logo.png" alt="logo">
+      </div>
+      <div class="operate-column">
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="javascript:;" data-home>首页</a>
+            </li>
+            <li>
+              <a href="javascript:;" data-store>精选商品</a>
+            </li>
+            <li>
+              <a href="javascript:;" data-partner>伙伴/项目</a>
+            </li>
+            <li class="unfold">
+              <ul>
+                <li>
+                  <ul>
+                    <li class="other">
+                      <a href="javascript:;">其他</a>
+                    </li>
+                    <li class="unfold-list">
+                      <ul>
+                        <li>
+                          <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-news>新闻/博客</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-about>关于我们</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-contact>联系我们</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;" data-database>资料下载</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-news>新闻/博客</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-about>关于我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-contact>联系我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-database>资料下载</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="langue">
+          <div class="selector">
+            <div class="langue-name">
+              中文
+            </div>
+            <div class="button">
+              <div class="triangle-reverse"></div>
+              <div class="trangle"></div>
+            </div>
+            <ul class="langue-list">
+              <li class="cn active">中文</li>
+              <li class="en">English</li>
+              <li class="rus">русский язык</li>
+              <li class="arab">بالعربية</li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="icon"></div>
+          <div class="list" style="display: none;">
+            <div class="langue">
+              <div class="selector">
+                <div class="langue-name">
+                  中文
+                </div>
+                <div class="button">
+                  <div class="triangle-reverse"></div>
+                  <div class="trangle"></div>
+                </div>
+                <ul class="langue-list">
+                  <li class="cn active">中文</li>
+                  <li class="en">English</li>
+                  <li class="rus">русский язык</li>
+                  <li class="arab">بالعربية</li>
+                </ul>
+              </div>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li>
+                  <a href="javascript:;" data-home>首页</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-store>精选商品</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-partner>伙伴/项目</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-environmental>环保/消除饥饿</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-news>新闻/博客</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-about>关于我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-contact>联系我们</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-database>资料下载</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="home">
+    <div class="barter-nav pc">
+      <img src="../static/imgs/home/barter.png" alt="cash">
+      <div class="toggle-btn">
+        <img src="../static/imgs/home/red-point.png" alt="btn">
+      </div>
+      <div class="content" style="display: none;">
+        <div class="row1">
+          <span>两天</span><span class="num">6</span><span>折</span>
+          <div class="part">
+            <div class="text">BARTER</div>
+            <div class="nav-btn">
+              了解更多>>
+            </div>
+          </div>
+        </div>
+        <div class="row2">
+          <span>每天</span><span class="num">30</span><span>个名额</span>
+        </div>
+      </div>
+    </div>
+    <div class="cash-nav pc">
+      <img src="../static/imgs/home/cash.png" alt="cash">
+      <div class="toggle-btn">
+        <img src="../static/imgs/home/red-point.png" alt="btn">
+      </div>
+      <div class="content">
+        <div class="row1">
+          <span>两天</span><span class="num">6</span><span>折</span>
+          <div class="part">
+            <div class="text">CASH</div>
+            <div class="nav-btn">
+              了解更多>>
+            </div>
+          </div>
+        </div>
+        <div class="row2">
+          <span>每天</span><span class="num">30</span><span>个名额</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../static/imgs/home/barter.png">
+          <div class="cover">
+            <div class="content">
+              <div class="row1">
+                <span>两天</span><span class="num">6</span><span>折</span>
+                <div class="part">
+                  <div class="text">BARTER</div>
+                  <div class="nav-btn" data-barter>
+                    了解更多>>
+                  </div>
+                </div>
+              </div>
+              <div class="row2">
+                <span>每天</span><span class="num">30</span><span>个名额</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="../static/imgs/home/cash.png">
+          <div class="cover">
+            <div class="content">
+              <div class="row1">
+                <span>两天</span><span class="num">6</span><span>折</span>
+                <div class="part">
+                  <div class="text">CASH</div>
+                  <div class="nav-btn" data-cash>
+                    了解更多>>
+                  </div>
+                </div>
+              </div>
+              <div class="row2">
+                <span>每天</span><span class="num">30</span><span>个名额</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <script src="../static/js/swiper-bundle.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper', {
+      loop: false, // 循环模式选项
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: true
+    })
+  </script>
+</body>
+
+</html>
